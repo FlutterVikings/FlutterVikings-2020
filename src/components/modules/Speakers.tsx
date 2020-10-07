@@ -30,6 +30,7 @@ const Speakers = () => {
                   <a
                     className="Btn Btn--cfp Btn--cta"
                     target="_blank"
+                    rel="noopener noreferrer"
                     href={config.cfpUrl}
                   >
                     Submit your Talk!

@@ -65,6 +65,7 @@ const Sponsors = () => {
                   <a
                     className="Btn Btn--cfp Btn--cta"
                     target="_blank"
+                    rel="noopener noreferrer"
                     href={`mailto:${config.email}`}
                   >
                     SEND US AN EMAIL

@@ -49,11 +49,23 @@ const Scene = () => {
           <p className="SceneOverlay-location">3 Days Online</p>
         </div>
         <div className="CTA-actions">
-          <a className="Btn Btn--ticket Btn--cta" target="_blank" href={config.ticketUrl}>
+          <a
+            className="Btn Btn--ticket Btn--cta"
+            target="_blank"
+            rel="noopener noreferrer"
+            rel="noopener noreferrer"
+            href={config.ticketUrl}
+          >
             Get your FREE ticket
           </a>
           {width > sizes.md && (
-            <a className="Btn Btn--cfp Btn--cta" target="_blank" href={config.cfpUrl}>
+            <a
+              className="Btn Btn--cfp Btn--cta"
+              target="_blank"
+              rel="noopener noreferrer"
+              rel="noopener noreferrer"
+              href={config.cfpUrl}
+            >
               Submit your Talk!
             </a>
           )}

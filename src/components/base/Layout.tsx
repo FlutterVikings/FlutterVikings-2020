@@ -6,6 +6,7 @@ import { Nav } from '../modules';
 
 import '../../style/all.sass';
 import { darkTheme, lightTheme } from '../../theme';
+import { SEO } from './SEO';
 
 const ModeButton = styled.button`
   background: none;
@@ -38,7 +39,7 @@ const Layout = ({ children }: { children: any }) => {
         <GlobalStyle />
         <main className={isDarkMode ? 'night' : 'day'}>
           <Nav />
-          <ModeButton onClick={toggelThemeMode}>
+          <ModeButton aria-label="Theme Mode" onClick={toggelThemeMode}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

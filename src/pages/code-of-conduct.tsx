@@ -131,6 +131,7 @@ export default () => {
                   <a
                     class="blue"
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="mailto:team@flutterVikings.com?subject=Flutter%20Vikings%20Code%20of%20Conduct"
                   >
                     FlutterVikings Team
@@ -170,11 +171,17 @@ export default () => {
                   class="blue"
                   href="http://geekfeminism.wikia.com/wiki/Community_anti-harassment/Policy"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Geek Feminism
                 </a>{' '}
                 and the{' '}
-                <a class="blue" href="https://2018.xoxofest.com/conduct" target="_blank">
+                <a
+                  class="blue"
+                  href="https://2018.xoxofest.com/conduct"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   XOXO Community Code of Conduct
                 </a>
                 .
