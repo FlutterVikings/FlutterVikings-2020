@@ -1,0 +1,17 @@
+[
+  {
+    "id": "google",
+    "name": "Google",
+    "level": 1
+  },
+  {
+    "id": "manning",
+    "name": "Manning",
+    "level": 2
+  },
+   {
+     "id": "softiware",
+     "name": "Softiware AS",
+     "level": 2
+   }
+]

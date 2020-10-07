@@ -1,0 +1,37 @@
+[
+  {
+    "id": "flutter_oslo",
+    "name": "Flutter Oslo",
+    "level": 1
+  },
+  {
+    "id": "flutter_stavanger",
+    "name": "Flutter Stavanger",
+    "level": 2
+  },
+  {
+    "id": "gdg_oslo",
+    "name": "GDG Oslo",
+    "level": 3
+  },
+  {
+    "id": "mobile_meetup_olso",
+    "name": "Mobile Oslo",
+    "level": 3
+  },
+  {
+    "id": "gdg_western_sweeden",
+    "name": "GDG Western Sweeden",
+    "level": 3
+  },
+  {
+    "id": "flutter_cph",
+    "name": "Flutter Copenhagen",
+    "level": 3
+  },
+  {
+    "id": "flutter_stocholm",
+    "name": "Flutter Stockholm",
+    "level": 3
+  }
+]

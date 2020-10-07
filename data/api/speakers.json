@@ -1,0 +1,87 @@
+[
+  {
+    "id": "brian_egan",
+    "name": "Brian Egan",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "",
+      "description": "",
+      "lightening": false
+    },
+    "bio": "Brian Egan is a Montana boy living in Berlin, Germany. He previously worked on popular web and Android applications for SoundCloud and Zappos. He now spends his time writing open source Dart code, developing his business, and scuba diving as often as possible. He is the author of and contributor to several Dart libraries, including RxDart, redux, flutter_redux, and flutter_architecture_samples."
+  },
+  {
+    "id": "pooja_bhaumik",
+    "name": "Pooja Bhaumik",
+    "title": "Google Developer Expert for Flutter, Technical Blogger & Public Speaker and Senior Engineer in Bounce",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "",
+      "description": "",
+      "lightening": false
+    },
+    "bio": ""
+  },
+  {
+    "id": "felix_angelov",
+    "name": "Felix Angelov",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "",
+      "description": "",
+      "lightening": false
+    },
+    "bio": ""
+  },
+  {
+    "id": "miguel_beltran",
+    "name": "Miguel Beltran",
+    "title": "Freelance Flutter Developer",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "Testing Everything in Flutter",
+      "description": "One of the best things about the Flutter developer experience is writing tests. Traditionally, testing in native platforms has been a tedious task which teams left to do, but with Flutter, writing automated tests that verify the logic of your app is a breeze. In this talk, you will learn how to write effective Unit and Widget tests. I will give you an introduction to testing, what mocks and fakes are and how to use them, the tools that Dart provides us for testing and how to cover with tests your application logic and widgets in Flutter. You will also learn what “driver tests” are and when to use them. This talk is intended for developers that are familiar with Flutter but are not yet familiar with testing. After this talk, you and your team will become more effective developers by writing tests and code that will withstand the “test” of time.",
+      "lightening": false
+    },
+    "bio": "Miguel is a freelance developer based in Berlin, experienced in mobile development both on native and cross-platform apps. He currently co-runs a podcast called Code Cafeteria and you can find him sketchnoting at tech conferences."
+  },
+  {
+    "id": "pawan_kumar",
+    "name": "Pawan Kumar",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "",
+      "description": "",
+      "lightening": false
+    },
+    "bio": "Hi, I am Pawan Kumar, Google Developer Expert for Flutter, Firebase & Web Tech. I work at Frontier as a head of Mobile Engineering. I am a youtuber having channel MTECHVIRAL."
+  }
+]

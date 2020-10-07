@@ -1,0 +1,25 @@
+import { useStaticQuery, graphql } from 'gatsby';
+import { FileImage } from '../models/file';
+import { Sponsor } from '../models/Sponsor';
+
+export const useSponsors = (images: FileImage[]): Sponsor[] => {
+  const { items } = useStaticQuery(graphql`
+    {
+      items: allSponsorsJson {
+        edges {
+          node {
+            id
+            name
+            level
+          }
+        }
+      }
+    }
+  `);
+  return items.edges
+    .map((sp: any) => {
+      const image = images.find((img) => img.name === sp.node.id);
+      return new Sponsor(sp.node, image);
+    })
+    .sort((sp: Sponsor, sp2: Sponsor) => sp.level < sp2.level);
+};
