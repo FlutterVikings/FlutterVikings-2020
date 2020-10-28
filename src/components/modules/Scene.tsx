@@ -47,28 +47,19 @@ const Scene = () => {
         <div className="SceneOverlay-info">
           <p className="SceneOverlay-date">17-19 November, 2020</p>
           <p className="SceneOverlay-location">3 Days Online</p>
+          <p className="SceneOverlay-location">
+            Speakers and Program announcement coming soon
+          </p>
         </div>
         <div className="CTA-actions">
           <a
             className="Btn Btn--ticket Btn--cta"
             target="_blank"
             rel="noopener noreferrer"
-            rel="noopener noreferrer"
             href={config.ticketUrl}
           >
             Get your FREE ticket
           </a>
-          {width > sizes.md && (
-            <a
-              className="Btn Btn--cfp Btn--cta"
-              target="_blank"
-              rel="noopener noreferrer"
-              rel="noopener noreferrer"
-              href={config.cfpUrl}
-            >
-              Submit your Talk!
-            </a>
-          )}
         </div>
       </div>
     </section>

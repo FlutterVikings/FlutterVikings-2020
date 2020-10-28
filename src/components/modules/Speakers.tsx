@@ -23,20 +23,6 @@ const Speakers = () => {
                   return <FaceImage key={member.id} member={member} />;
                 })}
               </ResponsiveGrid>
-              <Content center={true}>
-                <div className="CTA-actions">
-                  <h3>You may become our speaker? </h3>
-                  <br />
-                  <a
-                    className="Btn Btn--cfp Btn--cta"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={config.cfpUrl}
-                  >
-                    Submit your Talk!
-                  </a>
-                </div>
-              </Content>
             </Container>
           </Section>
         )}
