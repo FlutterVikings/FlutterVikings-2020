@@ -10,8 +10,8 @@
       "linkedin": ""
     },
     "talk": {
-      "title": "",
-      "description": "",
+      "title": "Let's Live Code a Checkbox Widget!",
+      "description": "Are you getting started with Flutter? Join Brian for a pragmatic introduction to creating your own Widgets! We’ll live code a Checkbox widget starting from scratch, discussing core concepts such as layouts, animations, callback functions, and Stateful Widgets. There’s a lot to learn from a humble Checkbox!",
       "lightening": false
     },
     "bio": "Brian Egan is a Montana boy living in Berlin, Germany. He previously worked on popular web and Android applications for SoundCloud and Zappos. He now spends his time writing open source Dart code, developing his business, and scuba diving as often as possible. He is the author of and contributor to several Dart libraries, including RxDart, redux, flutter_redux, and flutter_architecture_samples."
@@ -51,6 +51,58 @@
     "bio": ""
   },
   {
+    "id": "danielle_cox",
+    "name": "Danielle Cox",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "",
+      "description": "",
+      "lightening": true
+    },
+    "bio": ""
+  },
+  {
+    "id": "simon_lightfoot",
+    "name": "Simon Lightfoot",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "",
+      "description": "",
+      "lightening": false
+    },
+    "bio": ""
+  },
+
+  {
+    "id": "mais_alheraki",
+    "name": "Mais Alheraki",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "FlutterFire: Query Like a Hero",
+      "description": "",
+      "lightening": false
+    },
+    "bio": ""
+  },
+  {
     "id": "miguel_beltran",
     "name": "Miguel Beltran",
     "title": "Freelance Flutter Developer",
@@ -68,6 +120,193 @@
     "bio": "Miguel is a freelance developer based in Berlin, experienced in mobile development both on native and cross-platform apps. He currently co-runs a podcast called Code Cafeteria and you can find him sketchnoting at tech conferences."
   },
   {
+    "id": "kamal_shree",
+    "name": "kamal shree S",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "",
+      "description": "",
+      "lightening": true
+    },
+    "bio": ""
+  },
+  {
+    "id": "lukas_klingsbo",
+    "name": "Lukas Klingsbo",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "",
+      "description": "",
+      "lightening": false
+    },
+    "bio": ""
+  },
+  {
+    "id": "rihanna_kedir",
+    "name": "Rihanna Kedir",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "Leveraging Flutter for web support",
+      "description": "",
+      "lightening": false
+    },
+    "bio": ""
+  },
+  {
+    "id": "aloos_deniel",
+    "name": "Aloïs Deniel",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "",
+      "description": "",
+      "lightening": true
+    },
+    "bio": ""
+  },
+  {
+    "id": "katarina_sheremet",
+    "name": "Katarina Sheremet",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "",
+      "description": "",
+      "lightening": false
+    },
+    "bio": ""
+  },
+  {
+    "id": "dominik_roszkowski",
+    "name": "Dominik Roszkowski",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "",
+      "description": "",
+      "lightening": true
+    },
+    "bio": ""
+  },
+  {
+    "id": "juna_salviati",
+    "name": "Juna Salviati",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "Leveraging Flutter for web support",
+      "description": "",
+      "lightening": false
+    },
+    "bio": ""
+  },
+  {
+    "id": "damodar_lohani",
+    "name": "Damodar Lohani",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "",
+      "description": "",
+      "lightening": true
+    },
+    "bio": ""
+  },
+  {
+    "id": "vladimir_ivanov",
+    "name": "Vladimir Ivanov",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "",
+      "description": "",
+      "lightening": true
+    },
+    "bio": ""
+  },
+  {
+    "id": "ashita_prasad",
+    "name": "Ashita Prasad",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "",
+      "description": "",
+      "lightening": true
+    },
+    "bio": ""
+  },
+  {
+    "id": "robert_brunhage",
+    "name": "Robert Brunhage",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "",
+      "description": "",
+      "lightening": true
+    },
+    "bio": ""
+  },
+  {
     "id": "pawan_kumar",
     "name": "Pawan Kumar",
     "title": "",
@@ -83,5 +322,22 @@
       "lightening": false
     },
     "bio": "Hi, I am Pawan Kumar, Google Developer Expert for Flutter, Firebase & Web Tech. I work at Frontier as a head of Mobile Engineering. I am a youtuber having channel MTECHVIRAL."
+  },
+  {
+    "id": "muhammed_salih_guler",
+    "name": "Muhammed Salih Guler",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "",
+      "description": "",
+      "lightening": true
+    },
+    "bio": ""
   }
 ]

@@ -1,6 +1,6 @@
 [
   {
-    "id": "simon_lightfoot",
+    "id": "simon_lightfoot_1",
     "name": "Simon Lightfoot",
     "title": "",
     "company": "",
@@ -36,20 +36,8 @@
     "bio": ""
   },
   {
-    "id": "danielle_cox",
+    "id": "danielle_cox_1",
     "name": "Danielle Cox",
-    "title": "",
-    "company": "",
-    "social": {
-      "twitter": "",
-      "github": "",
-      "linkedin": ""
-    },
-    "bio": ""
-  },
-  {
-    "id": "robert_felker",
-    "name": "Robert Felker",
     "title": "",
     "company": "",
     "social": {
@@ -62,6 +50,18 @@
   {
     "id": "muhammed_salih_guler",
     "name": "Muhammed Salih Guler",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "bio": ""
+  },
+  {
+    "id": "robert_felker",
+    "name": "Robert Felker",
     "title": "",
     "company": "",
     "social": {

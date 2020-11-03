@@ -10,9 +10,13 @@ const PhotoTitle = styled.h3`
   left: 0;
   right: 0;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   color: #fff;
   padding: 5px;
+
+  @media (min-width: 1024px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const PhotoFilter = styled.div`

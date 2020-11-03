@@ -16,9 +16,9 @@ export default () => {
       <SEO />
       <Scene />
       <TheEvent />
-      <Committee />
-      <Diversity />
       <Speakers />
+      <Diversity />
+      <Committee />
       <Sponsors />
     </Layout>
   );
