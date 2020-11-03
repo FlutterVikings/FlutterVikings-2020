@@ -47,9 +47,6 @@ const Scene = () => {
         <div className="SceneOverlay-info">
           <p className="SceneOverlay-date">17-19 November, 2020</p>
           <p className="SceneOverlay-location">3 Days Online</p>
-          <p className="SceneOverlay-location">
-            Speakers and Program announcement coming soon
-          </p>
         </div>
         <div className="CTA-actions">
           <a
