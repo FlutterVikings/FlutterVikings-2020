@@ -1,38 +1,37 @@
-[
-  {
-    "id": "majid_hajian",
-    "name": "Majid Hajian",
-    "title": "",
-    "company": "",
-    "social": {
-      "twitter": "",
-      "github": "",
-      "linkedin": ""
+[{
+        "id": "majid_hajian",
+        "name": "Majid Hajian",
+        "title": "",
+        "company": "",
+        "social": {
+            "twitter": "",
+            "github": "",
+            "linkedin": ""
+        },
+        "bio": ""
     },
-    "bio": ""
-  },
-  {
-    "id": "sarah_fullmer",
-    "name": "Sarah Fullmer",
-    "title": "",
-    "company": "",
-    "social": {
-      "twitter": "",
-      "github": "",
-      "linkedin": ""
+    {
+        "id": "sarah_fullmer",
+        "name": "Sarah Fullmer",
+        "title": "",
+        "company": "",
+        "social": {
+            "twitter": "",
+            "github": "",
+            "linkedin": ""
+        },
+        "bio": ""
     },
-    "bio": ""
-  },
-  {
-    "id": "sumith_damodaran",
-    "name": "Sumith Damodaran",
-    "title": "",
-    "company": "",
-    "social": {
-      "twitter": "",
-      "github": "",
-      "linkedin": ""
-    },
-    "bio": ""
-  }
+    {
+        "id": "sumith_damodaran",
+        "name": "Sumith Damodaran",
+        "title": "Organizer",
+        "company": "Sitecore",
+        "social": {
+            "twitter": "https://twitter.com/sumithpdd",
+            "github": "https://github.com/sumithpdd",
+            "linkedin": "https://www.linkedin.com/in/sumith-damodaran/"
+        },
+        "bio": " Entrepreneur, Founder of mobile agency ,Product manager and mobile development enthusiasts Working as product manager, 20 years in the industry, Ranging from architect to CTO. Owned a few startup and mobile agencies. Very active in the community, have given talks on various technology stack and Organiser of GDG Copenhagen."
+    }
 ]
