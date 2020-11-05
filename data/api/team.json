@@ -10,6 +10,7 @@
         },
         "bio": ""
     },
+<<<<<<< HEAD
     {
         "id": "sarah_fullmer",
         "name": "Sarah Fullmer",
@@ -35,3 +36,32 @@
         "bio": " Entrepreneur, Founder of mobile agency ,Product manager and mobile development enthusiasts Working as product manager, 20 years in the industry, Ranging from architect to CTO. Owned a few startup and mobile agencies. Very active in the community, have given talks on various technology stack and Organiser of GDG Copenhagen."
     }
 ]
+=======
+    "bio": ""
+  },
+  {
+    "id": "sarah_fullmer",
+    "name": "Sarah Fullmer",
+    "title": "Software developer",
+    "company": "Telia Norway",
+    "social": {
+      "twitter": "https://twitter.com/FullmerS",
+      "github": "https://github.com/fullmers",
+      "linkedin": "https://www.linkedin.com/in/fullmersarah/"
+    },
+    "bio": "Sarah 2.1 is a mobile developer at Telia Norway. She has the great fortune to work there as a full-time Flutter developer. She is also a Flutterista and GDG Oslo organizer. Previous versions of Sarah include teacher, aerospace engineer, tester and Android developer."
+  },
+  {
+    "id": "sumith_damodaran",
+    "name": "Sumith Damodaran",
+    "title": "",
+    "company": "",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "bio": ""
+  }
+]
+>>>>>>> master
