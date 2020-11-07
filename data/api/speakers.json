@@ -89,7 +89,7 @@
     "name": "Danielle Cox",
     "title": "",
     "company": "",
-    "social": {0
+    "social": {
       "twitter": "",
       "github": "",
       "linkedin": ""
@@ -200,9 +200,9 @@
     "talk": {
       "title": "Leveraging Flutter for web support",
       "description": "",
-      "lightening": false
+      "lightening": false,
+      "coSpeaker": "juna_salviati"
     },
-    "coSpeaker": "juna_salviati",
     "bio": ""
   },
   {
