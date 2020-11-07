@@ -78,7 +78,7 @@
       "linkedin": ""
     },
     "talk": {
-      "title": "",
+      "title": "Cubit and beyond! live coding session",
       "description": "",
       "lightening": false
     },
@@ -89,7 +89,7 @@
     "name": "Danielle Cox",
     "title": "",
     "company": "",
-    "social": {
+    "social": {0
       "twitter": "",
       "github": "",
       "linkedin": ""
@@ -97,7 +97,7 @@
     "talk": {
       "title": "",
       "description": "",
-      "lightening": true
+      "lightening": false
     },
     "bio": ""
   },
@@ -173,7 +173,7 @@
   {
     "id": "lukas_klingsbo",
     "name": "Lukas Klingsbo",
-    "title": "Creating games with physics in Flutter",
+    "title": "Flutter Developer",
     "company": "Flame",
     "social": {
       "twitter": "https://twitter.com/spyd0n",
@@ -181,7 +181,7 @@
       "linkedin": ""
     },
     "talk": {
-      "title": "",
+      "title": "Creating games with physics in Flutter",
       "description": "",
       "lightening": false
     },
@@ -202,6 +202,7 @@
       "description": "",
       "lightening": false
     },
+    "coSpeaker": "juna_salviati",
     "bio": ""
   },
   {
@@ -217,7 +218,7 @@
     "talk": {
       "title": "Building truly adaptative user interfaces",
       "description": "In this talk, I will cover various technics to help you design truly cross-platform user interfaces (adapt the interface to the screen size, accessibility, inputs) and how to test your app against all these constraints.",
-      "lightening": true
+      "lightening": false
     },
     "bio": "I am a french Flutter developer with far too many open source projects! I created tools to help with development cycle like device preview or flutter to figma."
   },
@@ -302,7 +303,7 @@
     "talk": {
       "title": "Flutter & Rive : A Legendary Friendship",
       "description": "Rive is an important and powerful design tool, and a huge friend of Flutter developers! We will take a dive in Rive and it’s amazing features and small peek at the future of Rive, Rive 2 in 20 minutes.",
-      "lightening": true
+      "lightening": false
     },
     "bio": "My name is Merve Arslan. I am an organizer at GDG and WTM Eskisehir. I am a 23 years old freelance illustrator and Flutter developer. I have been working on Flutter for 2 and a half years. I started making speeches since I was studying at University.  I love combining my designs and Flutter."
   },
@@ -353,7 +354,7 @@
     "talk": {
       "title": "Flutter MVU architecture with a touch of C",
       "description": "Learn creating applications with the MVU arctictecture with Riverpod, StateNotifier and Hooks.",
-      "lightening": true
+      "lightening": false
     },
     "bio": "App developer who has been using and creating Flutter content for over two years."
   },
@@ -368,7 +369,7 @@
       "linkedin": ""
     },
     "talk": {
-      "title": "",
+      "title": "TBA",
       "description": "",
       "lightening": false
     },
@@ -385,9 +386,9 @@
       "linkedin": ""
     },
     "talk": {
-      "title": "",
+      "title": "TBA",
       "description": "",
-      "lightening": true
+      "lightening": false
     },
     "bio": ""
   }

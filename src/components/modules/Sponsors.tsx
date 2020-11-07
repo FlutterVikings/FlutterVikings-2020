@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, { DefaultTheme, ThemeConsumer } from 'styled-components';
-import config from '../../config';
 import { useAllFiles } from '../../hooks/useAllFiles';
 import { useSponsors } from '../../hooks/useSponsors';
 import { RelativeDirectory } from '../../models/file';
@@ -72,7 +71,7 @@ const SponsorsLevel = ({
   return (
     <SponsorSection>
       <SponsorHeadline>{title}</SponsorHeadline>
-      <ResponsiveGrid size={21}>
+      <ResponsiveGrid fill="auto-fit" size={21}>
         {list.map((sp) => (
           <SponsorCard key={sp.id} theme={theme} sponsor={sp} />
         ))}

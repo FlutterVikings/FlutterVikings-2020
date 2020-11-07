@@ -14,7 +14,7 @@ const Team = () => {
       <Section>
         <Container>
           <MainTitle title="Vikings Crew" titleStrokeText={'Orginizers'} />
-          <ResponsiveGrid>
+          <ResponsiveGrid fill="auto-fit" size={16}>
             {team.map((member) => {
               return <FaceImage key={member.id} member={member} />;
             })}

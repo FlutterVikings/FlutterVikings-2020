@@ -20,6 +20,7 @@ export const useSpeakers = (speakerImages: FileImage[]): Speaker[] => {
               description
               lightening
             }
+            coSpeaker
             company
             title
             bio

@@ -10,9 +10,8 @@ $Event-icon-border-size: 1px
     justify-content: flex-start
 
 .Event-time
-  +serif
   width: 50%
-
+  font-size: 1.4rem
   padding: $Event-icon-size 0
   margin-top: $Event-icon-size / 2 - $Event-icon-border-size * 2
 
@@ -71,9 +70,10 @@ $Event-icon-border-size: 1px
   display: block
   margin-left: $space-small
 
+
 .Event.Event--talk
   .Event-time
-    color: $color-blue
+    color: $color-logo-dark-blue
 
   .Event-details
     +serif
@@ -81,8 +81,24 @@ $Event-icon-border-size: 1px
     text-transform: capitalize
 
     &:before
-      background: $color-blue
-      border-color: $color-blue
+      background: $color-logo-dark-blue
+      border-color: $color-logo-dark-blue
+
+.night
+  .Event-name
+    color: $color-white
+  .Event.Event--talk
+    .Event-time
+      color: $color-logo-light-blue
+
+    .Event-details
+      +serif
+      font-style: italic
+      text-transform: capitalize
+
+      &:before
+        background: $color-logo-light-blue
+        border-color: $color-logo-light-blue      
 
 .Event.Event--lunch
   .Event-details:before

@@ -14,8 +14,7 @@ $Agenda-dash-spacing: 4px
     align-content: center
 
 .Agenda-column
-  width: 50%
-  height: 100%
+  flex: 1;
 
   display: flex
   flex-direction: column
@@ -43,11 +42,16 @@ $Agenda-dash-spacing: 4px
   +font-title
   font-weight: bold
 
+.night
+  .Agenda-day
+    color: $color-white
+
 .Agenda-date
-  +serif
   +font-text
   color: $color-grey
 
+
+  
 .Agenda-dash
   background: $color-grey
   width: $Agenda-dash-width

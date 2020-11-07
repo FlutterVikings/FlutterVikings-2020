@@ -11,7 +11,7 @@ export const useAllFiles = (dir?: RelativeDirectory): FileImage[] => {
             publicURL
             relativeDirectory
             childImageSharp {
-              fixed(width: 150, height: 150, cropFocus: CENTER, grayscale: true) {
+              fixed(width: 70, height: 70, cropFocus: CENTER, grayscale: true) {
                 ...GatsbyImageSharpFixed_withWebp
               }
               fluid(
