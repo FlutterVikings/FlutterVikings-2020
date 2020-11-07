@@ -66,18 +66,18 @@ const AgendaDay = ({ agendaDay }: Props) => {
             >
               <div className="Event-time">
                 {startTime} - {endTime}
-                <AddToCal
-                  startTime={startTime}
-                  endTime={endTime}
-                  date={dateISO}
-                  title={speaker?.talk?.title || title}
-                  desc={speaker?.talk?.description || ''}
-                />
               </div>
               <div className="Event-details">
                 <span className="Event-name">{speaker?.talk?.title || title}</span>
                 {speaker && (
                   <>
+                    <AddToCal
+                      startTime={startTime}
+                      endTime={endTime}
+                      date={dateISO}
+                      title={speaker?.talk?.title || title}
+                      desc={speaker?.talk?.description || ''}
+                    />
                     <a
                       href="/speakers/#_ko1"
                       target="blank"
@@ -151,6 +151,7 @@ const AgendaTabButton = styled.button<{ selected?: boolean }>`
   background: ${(props) => props.theme.colors.sectionbg};
   color: ${(props) =>
     props.theme.isDark ? props.theme.colors.white : props.theme.colors.black};
+  width: 100%;
   :hover {
     transition: all 0.5 linear;
     border-color: ${(props) => props.theme.colors.logoLightBlue};
