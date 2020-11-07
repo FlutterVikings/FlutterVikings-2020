@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 import { useAgenda } from '../../hooks/useAgenda';
 import { Container, MainTitle, Section } from '../common';
 
+// @ts-ignore
+// tslint:disable-next-line
+import '@culturehq/add-to-calendar/dist/styles.css';
+
 import { Agenda } from '../../models/Agenda';
 import styled from 'styled-components';
 import GatsbyImage from 'gatsby-image';
