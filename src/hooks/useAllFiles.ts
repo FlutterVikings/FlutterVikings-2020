@@ -48,6 +48,10 @@ export const useAllFiles = (dir?: RelativeDirectory): FileImage[] => {
       return allImages.filter(
         (img) => img.relativeDirectory === RelativeDirectory.sponsors,
       );
+    case RelativeDirectory.moderators:
+      return allImages.filter(
+        (img) => img.relativeDirectory === RelativeDirectory.moderators,
+      );
     case RelativeDirectory.team:
       return allImages.filter((img) => img.relativeDirectory === RelativeDirectory.team);
     default:

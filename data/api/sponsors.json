@@ -2,16 +2,43 @@
   {
     "id": "google",
     "name": "Google",
-    "level": 1
+    "level": 1,
+    "link": ""
+  },
+  {
+    "id": "appcricle",
+    "name": "AppCricle",
+    "level": 2,
+    "link": ""
   },
   {
     "id": "manning",
     "name": "Manning",
-    "level": 2
+    "level": 3,
+    "link": ""
   },
-   {
-     "id": "softiware",
-     "name": "Softiware AS",
-     "level": 2
-   }
+  {
+    "id": "softiware",
+    "name": "Softiware AS",
+    "level": 2,
+    "link": ""
+  },
+  {
+    "id": "stream",
+    "name": "Stream.io Inc",
+    "level": 1,
+    "link": ""
+  },
+  {
+    "id": "microsoft",
+    "name": "Microsoft",
+    "level": 1,
+    "link": ""
+  },
+  {
+    "id": "codemagic",
+    "name": "Codemagic",
+    "level": 3,
+    "link": ""
+  }
 ]

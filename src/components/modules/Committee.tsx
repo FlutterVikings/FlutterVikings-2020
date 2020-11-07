@@ -1,6 +1,5 @@
 import React from 'react';
 import { ThemeConsumer } from 'styled-components';
-import { useCommitteeImages } from '../../hooks/useCommitteeImages';
 import { useCommittee } from '../../hooks/useCommittee';
 import { Container, MainTitle, Section } from '../common';
 import { RelativeDirectory } from '../../models/file';

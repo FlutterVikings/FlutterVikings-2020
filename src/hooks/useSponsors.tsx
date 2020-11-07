@@ -9,6 +9,7 @@ export const useSponsors = (images: FileImage[]): Sponsor[] => {
         edges {
           node {
             id
+            link
             name
             level
           }
@@ -16,10 +17,8 @@ export const useSponsors = (images: FileImage[]): Sponsor[] => {
       }
     }
   `);
-  return items.edges
-    .map((sp: any) => {
-      const image = images.find((img) => img.name === sp.node.id);
-      return new Sponsor(sp.node, image);
-    })
-    .sort((sp: Sponsor, sp2: Sponsor) => sp.level < sp2.level);
+  return items.edges.map((sp: any) => {
+    const image = images.find((img) => img.name === sp.node.id);
+    return new Sponsor(sp.node, image);
+  });
 };

@@ -1,6 +1,5 @@
 import React from 'react';
 import { ThemeConsumer } from 'styled-components';
-import config from '../../config';
 import { useAllFiles } from '../../hooks/useAllFiles';
 import { useSpeakers } from '../../hooks/useSpeakers';
 import { RelativeDirectory } from '../../models/file';

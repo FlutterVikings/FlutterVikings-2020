@@ -6,6 +6,7 @@ export enum RelativeDirectory {
   communities = 'communities',
   sponsors = 'sponsors',
   team = 'team',
+  moderators = 'moderators',
 }
 
 export interface FileImage {

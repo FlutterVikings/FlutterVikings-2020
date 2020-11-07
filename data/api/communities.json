@@ -2,36 +2,49 @@
   {
     "id": "flutter_oslo",
     "name": "Flutter Oslo",
-    "level": 1
+    "level": 1,
+    "link": ""
   },
   {
     "id": "flutter_stavanger",
     "name": "Flutter Stavanger",
-    "level": 2
+    "level": 1,
+    "link": ""
   },
   {
     "id": "gdg_oslo",
     "name": "GDG Oslo",
-    "level": 3
+    "level": 1,
+    "link": ""
   },
   {
     "id": "mobile_meetup_olso",
     "name": "Mobile Oslo",
-    "level": 3
+    "level": 1,
+    "link": ""
   },
   {
     "id": "gdg_western_sweeden",
     "name": "GDG Western Sweeden",
-    "level": 3
+    "level": 1,
+    "link": ""
   },
   {
     "id": "flutter_cph",
     "name": "Flutter Copenhagen",
-    "level": 3
+    "level": 1,
+    "link": ""
   },
   {
     "id": "flutter_stocholm",
     "name": "Flutter Stockholm",
-    "level": 3
+    "level": 1,
+    "link": ""
+  },
+  {
+    "id": "gdg_cph",
+    "name": "GDG Copenhagen",
+    "level": 1,
+    "link": ""
   }
 ]

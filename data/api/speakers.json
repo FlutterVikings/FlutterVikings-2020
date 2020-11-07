@@ -1,37 +1,37 @@
 [
   {
-    "id": "merve_arslan",
-    "name": "Merve Arslan",
-    "title": "Flutter Developer",
-    "company": "",
+    "id": "christopher_fujino",
+    "name": "Christopher Fujino",
+    "title": "Software Engineer",
+    "company": "Google",
     "social": {
-      "twitter": "https://twitter.com/arslannmrv",
-      "github": "https://github.com/arslannmrv",
+      "twitter": "",
+      "github": "",
       "linkedin": ""
     },
     "talk": {
-      "title": "Flutter & Rive : A Legendary Friendship",
-      "description": "Rive is an important and powerful design tool, and a huge friend of Flutter developers! We will take a dive in Rive and it’s amazing features and small peek at the future of Rive, Rive 2 in 20 minutes.",
-      "lightening": true
+      "title": "Ask anything about Flutter!",
+      "description": "Ask anything about Flutter from a Flutter team member",
+      "lightening": false
     },
-    "bio": "My name is Merve Arslan. I am an organizer at GDG and WTM Eskisehir. I am a 23 years old freelance illustrator and Flutter developer. I have been working on Flutter for 2 and a half years. I started making speeches since I was studying at University.  I love combining my designs and Flutter."
+    "bio": "Christopher is Flutter team member."
   },
   {
-    "id": "merve_arslan",
-    "name": "Merve Arslan",
-    "title": "Flutter Developer",
-    "company": "",
+    "id": "kate_lovett",
+    "name": "Kate Lovett",
+    "title": "Software Engineer",
+    "company": "Google",
     "social": {
-      "twitter": "https://twitter.com/arslannmrv",
-      "github": "https://github.com/arslannmrv",
+      "twitter": "",
+      "github": "",
       "linkedin": ""
     },
     "talk": {
-      "title": "Flutter & Rive : A Legendary Friendship",
-      "description": "Rive is an important and powerful design tool, and a huge friend of Flutter developers! We will take a dive in Rive and it’s amazing features and small peek at the future of Rive, Rive 2 in 20 minutes.",
-      "lightening": true
+      "title": "The new ScaffoldMessenger widget and good design patterns for it",
+      "description": "",
+      "lightening": false
     },
-    "bio": "My name is Merve Arslan. I am an organizer at GDG and WTM Eskisehir. I am a 23 years old freelance illustrator and Flutter developer. I have been working on Flutter for 2 and a half years. I started making speeches since I was studying at University.  I love combining my designs and Flutter."
+    "bio": "Kate is Flutter and Dart team member."
   },
   {
     "id": "brian_egan",
@@ -290,6 +290,23 @@
     "bio": "A professional Full-stack Developer, currently mostly involved in Flutter. Loves to connect and contribute in the community. Always learning and helping others learn."
   },
   {
+    "id": "merve_arslan",
+    "name": "Merve Arslan",
+    "title": "Flutter Developer",
+    "company": "",
+    "social": {
+      "twitter": "https://twitter.com/arslannmrv",
+      "github": "https://github.com/arslannmrv",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "Flutter & Rive : A Legendary Friendship",
+      "description": "Rive is an important and powerful design tool, and a huge friend of Flutter developers! We will take a dive in Rive and it’s amazing features and small peek at the future of Rive, Rive 2 in 20 minutes.",
+      "lightening": true
+    },
+    "bio": "My name is Merve Arslan. I am an organizer at GDG and WTM Eskisehir. I am a 23 years old freelance illustrator and Flutter developer. I have been working on Flutter for 2 and a half years. I started making speeches since I was studying at University.  I love combining my designs and Flutter."
+  },
+  {
     "id": "vladimir_ivanov",
     "name": "Vladimir Ivanov",
     "title": "",
@@ -339,23 +356,6 @@
       "lightening": true
     },
     "bio": "App developer who has been using and creating Flutter content for over two years."
-  },
-  {
-    "id": "merve_arslan",
-    "name": "Merve Arslan",
-    "title": "Flutter Developer",
-    "company": "",
-    "social": {
-      "twitter": "https://twitter.com/arslannmrv",
-      "github": "https://github.com/arslannmrv",
-      "linkedin": ""
-    },
-    "talk": {
-      "title": "Flutter & Rive : A Legendary Friendship",
-      "description": "Rive is an important and powerful design tool, and a huge friend of Flutter developers! We will take a dive in Rive and it’s amazing features and small peek at the future of Rive, Rive 2 in 20 minutes.",
-      "lightening": true
-    },
-    "bio": "My name is Merve Arslan. I am an organizer at GDG and WTM Eskisehir. I am a 23 years old freelance illustrator and Flutter developer. I have been working on Flutter for 2 and a half years. I started making speeches since I was studying at University.  I love combining my designs and Flutter."
   },
   {
     "id": "pawan_kumar",
