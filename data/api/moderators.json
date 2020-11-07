@@ -1,0 +1,26 @@
+[
+  {
+    "id": "nawal_alhamwi",
+    "name": "Nawal Alhamwi",
+    "title": "Flutter Developer",
+    "company": "",
+    "social": {
+      "twitter": "https://twitter.com/__nawalhmw",
+      "github": "",
+      "linkedin": "https://www.linkedin.com/in/nawal-al-hamwi/"
+    },
+    "bio": ""
+  },
+  {
+    "id": "evgeny_kot",
+    "name": "Evgeny Kot",
+    "title": "Dart/Flutter/Web GDE",
+    "company": "Wrike",
+    "social": {
+      "twitter": "https://twitter.com/bunopus",
+      "github": "",
+      "linkedin": ""
+    },
+    "bio": "Frontend developer for many years, speaker. Co-organizer of HolyJS conference. Dart/Flutter/Web GDE. Evgeny has come a long way from C++ and low-level programming to JavaScript and Web. Jumped on the Dart train before Flutter even showed up."
+  }
+]

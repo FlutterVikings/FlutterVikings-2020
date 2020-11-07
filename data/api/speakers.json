@@ -1,5 +1,39 @@
 [
   {
+    "id": "merve_arslan",
+    "name": "Merve Arslan",
+    "title": "Flutter Developer",
+    "company": "",
+    "social": {
+      "twitter": "https://twitter.com/arslannmrv",
+      "github": "https://github.com/arslannmrv",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "Flutter & Rive : A Legendary Friendship",
+      "description": "Rive is an important and powerful design tool, and a huge friend of Flutter developers! We will take a dive in Rive and it’s amazing features and small peek at the future of Rive, Rive 2 in 20 minutes.",
+      "lightening": true
+    },
+    "bio": "My name is Merve Arslan. I am an organizer at GDG and WTM Eskisehir. I am a 23 years old freelance illustrator and Flutter developer. I have been working on Flutter for 2 and a half years. I started making speeches since I was studying at University.  I love combining my designs and Flutter."
+  },
+  {
+    "id": "merve_arslan",
+    "name": "Merve Arslan",
+    "title": "Flutter Developer",
+    "company": "",
+    "social": {
+      "twitter": "https://twitter.com/arslannmrv",
+      "github": "https://github.com/arslannmrv",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "Flutter & Rive : A Legendary Friendship",
+      "description": "Rive is an important and powerful design tool, and a huge friend of Flutter developers! We will take a dive in Rive and it’s amazing features and small peek at the future of Rive, Rive 2 in 20 minutes.",
+      "lightening": true
+    },
+    "bio": "My name is Merve Arslan. I am an organizer at GDG and WTM Eskisehir. I am a 23 years old freelance illustrator and Flutter developer. I have been working on Flutter for 2 and a half years. I started making speeches since I was studying at University.  I love combining my designs and Flutter."
+  },
+  {
     "id": "brian_egan",
     "name": "Brian Egan",
     "title": "",
@@ -20,18 +54,18 @@
     "id": "pooja_bhaumik",
     "name": "Pooja Bhaumik",
     "title": "Google Developer Expert for Flutter, Technical Blogger & Public Speaker and Senior Engineer in Bounce",
-    "company": "",
+    "company": "Bounceshare",
     "social": {
-      "twitter": "",
-      "github": "",
+      "twitter": "https://twitter.com/pblead26",
+      "github": "https://github.com/PoojaB26",
       "linkedin": ""
     },
     "talk": {
-      "title": "",
-      "description": "",
+      "title": "Widget Testing for Dummies",
+      "description": "Do you test your code?  Let's get straight to the point. If you are someone who shies away on this question,  you are not a bad developer. You are just someone who hasn't given testing the attention it needs.And this talk won't be about how amazing testing is, or how many categories of testing is provided by the Flutter framework. You would know that from this as well https://flutter.dev/docs/testing.But this talk is just about Widget Testing, because it's special to Flutter. And if everything is a widget, everything SHOULD be tested. And I want to dig deeper into this.",
       "lightening": false
     },
-    "bio": ""
+    "bio": "Pooja Bhaumik, an early Flutter adopter turned into Google Developer Expert for Flutter, who loves to share her knowledge through blog posts, public speaking, Youtube videos, and open source contributions. Also a Sr. Engineer in Bounce, she is building the next best solutions for mobility in India. She is also passionate about diversity & inclusion and has started a couple of communities, the current one being WomenDroid in Bengaluru, to support personal & professional growth objectives for women developers."
   },
   {
     "id": "felix_angelov",
@@ -125,25 +159,25 @@
     "title": "",
     "company": "",
     "social": {
-      "twitter": "",
-      "github": "",
+      "twitter": "https://twitter.com/whatsupcoders",
+      "github": "https://github.com/whatsupcoders",
       "linkedin": ""
     },
     "talk": {
-      "title": "",
-      "description": "",
+      "title": "Making best use of Dart DevTools",
+      "description": "In this session you will get an overview of what's new in Dart DevTools for debugging and performance tools for Dart and Flutter, including demos and take a closer look at everything new - along with tips and tricks for getting the most out of them! Ranging from inspecting your layout to analyzing your app performance view and inbuilt debugger. Also, this session will take you through a variety of steps that can help increase your productivity.",
       "lightening": true
     },
-    "bio": ""
+    "bio": "Google Developer Expert in Flutter and Dart with 11 years of experience in Web Technologies, Android and Flutter. I have worked for multinational firms in India, the Netherlands and US.I am an active Youtuber(whatsupcoders) and international speaker with my talks featured in Chicago Meetup,        Devfest Michigan, Droidcon Toronto, KolkataKreate,360AnDev,byteconf-flutter, FemTech, NDC Sydney and various Women TechMakers events globally."
   },
   {
     "id": "lukas_klingsbo",
     "name": "Lukas Klingsbo",
-    "title": "",
-    "company": "",
+    "title": "Creating games with physics in Flutter",
+    "company": "Flame",
     "social": {
-      "twitter": "",
-      "github": "",
+      "twitter": "https://twitter.com/spyd0n",
+      "github": "https://github.com/spydon/",
       "linkedin": ""
     },
     "talk": {
@@ -151,7 +185,7 @@
       "description": "",
       "lightening": false
     },
-    "bio": ""
+    "bio": "Programmer, backpacker, climber and slightly more crazy than you are allowed to be."
   },
   {
     "id": "rihanna_kedir",
@@ -174,52 +208,52 @@
     "id": "aloos_deniel",
     "name": "Aloïs Deniel",
     "title": "",
-    "company": "",
+    "company": "Freelance",
     "social": {
-      "twitter": "",
-      "github": "",
+      "twitter": "https://twitter.com/aloisdeniel",
+      "github": "https://github.com/aloisdeniel/",
       "linkedin": ""
     },
     "talk": {
-      "title": "",
-      "description": "",
+      "title": "Building truly adaptative user interfaces",
+      "description": "In this talk, I will cover various technics to help you design truly cross-platform user interfaces (adapt the interface to the screen size, accessibility, inputs) and how to test your app against all these constraints.",
       "lightening": true
     },
-    "bio": ""
+    "bio": "I am a french Flutter developer with far too many open source projects! I created tools to help with development cycle like device preview or flutter to figma."
   },
   {
     "id": "katarina_sheremet",
     "name": "Katarina Sheremet",
     "title": "",
-    "company": "",
+    "company": "FutureWare",
     "social": {
-      "twitter": "",
-      "github": "",
+      "twitter": "https://twitter.com/kate_sheremet",
+      "github": "https://github.com/ksheremet",
       "linkedin": ""
     },
     "talk": {
-      "title": "",
-      "description": "",
+      "title": "Effective Flutter Development",
+      "description": "In this talk, we are going to discuss some practices, tips, and tools that will help you to write effective code even if you are a beginner and be more productive when developing apps using Flutter and Dart. This talk is suitable for all levels.",
       "lightening": false
     },
-    "bio": ""
+    "bio": "Katarina is Flutter Developer and Google Developer Expert in Flutter and Dart, WTM Switzerland co-organizer, and Flutter Zürich Meetup co-organizer. She runs her own company that is called FutureWare and works on her own projects. One of the projects is Delern Flashcards, which is published on Google Play and App Store and has more than 3000 installs. She also organizes events about technologies, gives talks, and writes articles about Flutter and Dart."
   },
   {
     "id": "dominik_roszkowski",
     "name": "Dominik Roszkowski",
     "title": "",
-    "company": "",
+    "company": "DR Labs",
     "social": {
-      "twitter": "",
-      "github": "",
+      "twitter": "https://twitter.com/OrestesGaolin",
+      "github": "http://github.com/orestesgaolin",
       "linkedin": ""
     },
     "talk": {
-      "title": "",
-      "description": "",
-      "lightening": true
+      "title": "Understanding Navigator 2.0 in Flutter",
+      "description": "Learn how to use new declarative Navigator 2.0 ",
+      "lightening": false
     },
-    "bio": ""
+    "bio": "Dominik is experienced Flutter Developer eager to create beautiful apps for mobile and desktop. He's Google Developer Expert in Flutter, co-founder of Flutter Europe conference and Flutter Warsaw meetup. He is active speaker on local meetups and conferences and writes Flutter-related articles on his blog roszkowski.dev. He's been working as a deputy manager of PW-Sat2 student satellite project."
   },
   {
     "id": "juna_salviati",
@@ -244,50 +278,50 @@
     "title": "",
     "company": "",
     "social": {
-      "twitter": "",
-      "github": "",
+      "twitter": "https://twitter.com/lohanidamodar",
+      "github": "https://github.com/lohanidamodar",
       "linkedin": ""
     },
     "talk": {
-      "title": "",
-      "description": "",
+      "title": "Dart Extension Methods in Flutter to Make Life Easier",
+      "description": "Dart comes with an awesome language feature, extension methods. Extension methods allows us to add functionalities to existing libraries easily. So in this talk, we are going to explore how we can use extension methods to our benefit, based mostly in context of Flutter.",
       "lightening": true
     },
-    "bio": ""
+    "bio": "A professional Full-stack Developer, currently mostly involved in Flutter. Loves to connect and contribute in the community. Always learning and helping others learn."
   },
   {
     "id": "vladimir_ivanov",
     "name": "Vladimir Ivanov",
     "title": "",
-    "company": "",
+    "company": "EPAM System",
     "social": {
-      "twitter": "",
-      "github": "",
+      "twitter": "https://twitter.com/vvsevolodovich",
+      "github": "https://github.com/vlivanov",
       "linkedin": ""
     },
     "talk": {
-      "title": "",
-      "description": "",
-      "lightening": true
+      "title": "Fried Bird: Preparing Flutter for the production usage",
+      "description": "Flutter is a hyped and young technology. But there are a lot of nuances that cause great inconvenience in the process of use like configuration of analysis, code generation issues, several environments support and multimodule issues. I am going to show how to deal with those issues providing the ready to use receipts. ",
+      "lightening": false
     },
-    "bio": ""
+    "bio": "I am a Solution Architect at EPAM Systems, designing Software Systems for living. I am a developer, passionate about Mobile technologies, Cloud platforms and System Design."
   },
   {
     "id": "ashita_prasad",
     "name": "Ashita Prasad",
     "title": "",
-    "company": "",
+    "company": "Flutter Gems",
     "social": {
-      "twitter": "",
+      "twitter": "https://twitter.com/ashitaprasad",
       "github": "",
       "linkedin": ""
     },
     "talk": {
-      "title": "",
-      "description": "",
+      "title": "A Flutter Developer's Journey: From Package Discovery to Publishing and Beyond",
+      "description": "This talk will introduce upcoming Flutter developers to the current Flutter package landscape comprising 12,000+ packages and will cover some state-of-the-art methods which should be followed by them while searching for the right package for their Flutter apps and while publishing a new Flutter package to gain a wider adoption.",
       "lightening": true
     },
-    "bio": ""
+    "bio": "Ashita is a die hard Flutter Developer and creator of Flutter Gems (https://fluttergems.dev), a visual package discovery platform which is trusted by more than 15000 Flutter developers across the globe."
   },
   {
     "id": "robert_brunhage",
@@ -295,16 +329,33 @@
     "title": "",
     "company": "",
     "social": {
-      "twitter": "",
-      "github": "",
+      "twitter": "https://twitter.com/robertbrunhage",
+      "github": "https://github.com/RobertBrunhage",
       "linkedin": ""
     },
     "talk": {
-      "title": "",
-      "description": "",
+      "title": "Flutter MVU architecture with a touch of C",
+      "description": "Learn creating applications with the MVU arctictecture with Riverpod, StateNotifier and Hooks.",
       "lightening": true
     },
-    "bio": ""
+    "bio": "App developer who has been using and creating Flutter content for over two years."
+  },
+  {
+    "id": "merve_arslan",
+    "name": "Merve Arslan",
+    "title": "Flutter Developer",
+    "company": "",
+    "social": {
+      "twitter": "https://twitter.com/arslannmrv",
+      "github": "https://github.com/arslannmrv",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "Flutter & Rive : A Legendary Friendship",
+      "description": "Rive is an important and powerful design tool, and a huge friend of Flutter developers! We will take a dive in Rive and it’s amazing features and small peek at the future of Rive, Rive 2 in 20 minutes.",
+      "lightening": true
+    },
+    "bio": "My name is Merve Arslan. I am an organizer at GDG and WTM Eskisehir. I am a 23 years old freelance illustrator and Flutter developer. I have been working on Flutter for 2 and a half years. I started making speeches since I was studying at University.  I love combining my designs and Flutter."
   },
   {
     "id": "pawan_kumar",
