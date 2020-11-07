@@ -79,7 +79,7 @@ const AgendaDay = ({ agendaDay }: Props) => {
                       desc={speaker?.talk?.description || ''}
                     />
                     <a
-                      href="/speakers/#_ko1"
+                      href={`/#${speaker.id}`}
                       target="blank"
                       className="SpeakerInformation"
                     >
@@ -93,7 +93,7 @@ const AgendaDay = ({ agendaDay }: Props) => {
                     </a>
                     {speaker?.talk.coSpeaker && (
                       <a
-                        href="/speakers/#_ko1"
+                        href={`/#${speaker.id}`}
                         target="blank"
                         className="SpeakerInformation"
                       >
