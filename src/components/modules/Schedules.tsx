@@ -4,6 +4,9 @@ import { useAgenda } from '../../hooks/useAgenda';
 import { Container, MainTitle, Section } from '../common';
 
 // @ts-ignore
+import TimezoneSelect from 'react-timezone-select';
+
+// @ts-ignore
 // tslint:disable-next-line
 import '@culturehq/add-to-calendar/dist/styles.css';
 
@@ -32,18 +35,21 @@ const AddToCal = ({
         name: `FlutterVikings - ${title}`,
         details: desc,
         location: 'Europe/Oslo',
-        startsAt: `${date}T${startTime}:00+00:00`,
-        endsAt: `${date}T${endTime}:00+00:00`,
+        startsAt: `${date}T${startTime}:00+01:00`,
+        endsAt: `${date}T${endTime}:00+01:00`,
       }}
     />
   );
 };
 interface Props {
   agendaDay: Agenda;
+  selectedTimezone: Timezone;
 }
 
-const AgendaDay = ({ agendaDay }: Props) => {
+const AgendaDay = ({ agendaDay, selectedTimezone }: Props) => {
   const { name, date, dateISO, programs } = agendaDay;
+  const timezoneValue = selectedTimezone.value;
+  const [year, month, day] = dateISO.split('-');
   return (
     <div className="Agenda-column Agenda-column">
       <div className="Agenda-columnTitle">
@@ -55,6 +61,33 @@ const AgendaDay = ({ agendaDay }: Props) => {
       {programs &&
         programs.map((program, i) => {
           const { title, startTime, endTime, speaker, isActivity, winnerTime } = program;
+          const [startTimeH, StartTimeMinute] = startTime.split(':');
+          const [endTimeH, endTimeMinute] = endTime.split(':');
+
+          const timezoneBasedStartTime = new Date(
+            Number(year),
+            Number(month),
+            Number(day),
+            Number(startTimeH),
+            Number(StartTimeMinute),
+          )
+            .toLocaleString('en-US', {
+              timeZone: timezoneValue,
+            })
+            .split(',')[1];
+
+          const timezoneBasedEndTime = new Date(
+            Number(year),
+            Number(month),
+            Number(day),
+            Number(endTimeH),
+            Number(endTimeMinute),
+          )
+            .toLocaleString('en-US', {
+              timeZone: timezoneValue,
+            })
+            .split(',')[1];
+
           return (
             <div
               key={i}
@@ -65,7 +98,7 @@ const AgendaDay = ({ agendaDay }: Props) => {
               }`}
             >
               <div className="Event-time">
-                {startTime} - {endTime}
+                {timezoneBasedStartTime} - {timezoneBasedEndTime}
               </div>
               <div className="Event-details">
                 <span className="Event-name">{speaker?.talk?.title || title}</span>
@@ -75,8 +108,10 @@ const AgendaDay = ({ agendaDay }: Props) => {
                       startTime={startTime}
                       endTime={endTime}
                       date={dateISO}
-                      title={speaker?.talk?.title || title}
-                      desc={speaker?.talk?.description || ''}
+                      title={`${speaker?.talk?.title} by ${speaker?.name}` || title}
+                      desc={
+                        `${speaker?.talk?.description} https://flutterVikings.com` || ''
+                      }
                     />
                     <a
                       href={`/#${speaker.id}`}
@@ -143,6 +178,7 @@ const AgendaTabButton = styled.button<{ selected?: boolean }>`
   margin: 5px;
   padding: 10px 25px;
   position: relative;
+  cursor: pointer;
   border: 3px solid
     ${(props) =>
       props.selected
@@ -158,31 +194,61 @@ const AgendaTabButton = styled.button<{ selected?: boolean }>`
   }
 `;
 
-const Notice = styled.p`
+const Notice = styled.div`
   color: ${(props) =>
     props.theme.isDark ? props.theme.colors.white : props.theme.colors.black};
   text-align: center;
   padding: 3rem 0;
   font-size: 1.7rem;
-`;
 
+  .css-2b097c-container,
+  .css-yk16xz-control,
+  .css-1pahdxg-control,
+  .css-26l3qy-menu {
+    background: ${(props) =>
+      props.theme.isDark ? props.theme.colors.black : props.theme.colors.grey};
+    text-align: left;
+    :hover,
+    :focus {
+      border-color: ${(props) => props.theme.colors.logoLightBlue};
+    }
+  }
+  .css-1uccc91-singleValue,
+  .css-b8ldur-Input {
+    color: ${(props) =>
+      props.theme.isDark ? props.theme.colors.white : props.theme.colors.black};
+  }
+`;
+interface Timezone {
+  value: string;
+  label: string;
+  altName: string;
+  abbrev: string;
+}
 const Schedules = () => {
+  const defaultTimezone = {
+    value: 'Europe/Amsterdam',
+    label: '(GMT+1:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna',
+    altName: 'Central European Time',
+    abbrev: 'CET',
+  };
   const images = useAllFiles();
   const speakers = useSpeakers(images);
   const agenda = useAgenda(speakers);
   const [selectedTab, seTSelectedTab] = useState(0);
+  const [selectedTimezone, setSelectedTimezone] = useState<Timezone>(defaultTimezone);
 
   const setTab = (index: number) => () => seTSelectedTab(index);
-
   return (
     <>
       <Section>
         <Container>
           <MainTitle title="Event Agenda" titleStrokeText={'Schedule'} />
           <Notice>
-            Time is based on Central European Time (CET)
-            <br /> `Add to my calendar` helps to save each talk based on your local
-            timezone
+            Time is based on {selectedTimezone.altName} ({selectedTimezone.abbrev})
+            <br />
+            <br />
+            <TimezoneSelect value={selectedTimezone} onChange={setSelectedTimezone} />
           </Notice>
           <div className="Agenda-twoColumnContainer">
             {agenda.map((agendaDay, i) => (
@@ -203,7 +269,13 @@ const Schedules = () => {
           <div className="Agenda-twoColumnContainer">
             {agenda.map(
               (agendaDay, i) =>
-                i === selectedTab && <AgendaDay key={i} agendaDay={agendaDay} />,
+                i === selectedTab && (
+                  <AgendaDay
+                    key={i}
+                    selectedTimezone={selectedTimezone}
+                    agendaDay={agendaDay}
+                  />
+                ),
             )}
           </div>
         </Container>
