@@ -74,7 +74,8 @@ const AgendaDay = ({ agendaDay, selectedTimezone }: Props) => {
             .toLocaleString('en-US', {
               timeZone: timezoneValue,
             })
-            .split(',')[1];
+            .split(',')[1]
+            .replace(/:\d{2}\s/, ' ');
 
           const timezoneBasedEndTime = new Date(
             Number(year),
@@ -86,7 +87,8 @@ const AgendaDay = ({ agendaDay, selectedTimezone }: Props) => {
             .toLocaleString('en-US', {
               timeZone: timezoneValue,
             })
-            .split(',')[1];
+            .split(',')[1]
+            .replace(/:\d{2}\s/, ' ');
 
           return (
             <div
