@@ -106,7 +106,7 @@ const AgendaDay = ({ agendaDay, selectedTimezone }: Props) => {
                 <span className="Event-name">{speaker?.talk?.title || title}</span>
                 {speaker && (
                   <>
-                    <AddToCal
+                    {/* <AddToCal
                       startTime={startTime}
                       endTime={endTime}
                       date={dateISO}
@@ -114,7 +114,7 @@ const AgendaDay = ({ agendaDay, selectedTimezone }: Props) => {
                       desc={
                         `${speaker?.talk?.description} https://flutterVikings.com` || ''
                       }
-                    />
+                    /> */}
                     <a
                       href={`/#${speaker.id}`}
                       target="blank"
