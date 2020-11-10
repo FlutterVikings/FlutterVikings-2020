@@ -12,6 +12,7 @@ import { Timezone } from '../models/Timezone';
 import spacetime from 'spacetime';
 // @ts-ignore
 import TimezoneSelect from 'react-timezone-select';
+import { AddToCal } from '../components/common/AddToCal';
 
 const SpeakerRow = styled.div`
   display: flex;
@@ -38,7 +39,7 @@ export default ({
 }) => {
   const { speaker, image, agenda } = data;
   let speakerTimeSlot;
-  let timezoneValue;
+  let timezoneValue = config.defaultTimezone.value;
   let timezoneBasedStartTime;
   let timezoneBasedEndTime;
   let spaceDate;
@@ -98,11 +99,26 @@ export default ({
                       <p>
                         Time:{' '}
                         <b>
-                          {timezoneBasedStartTime.goto(timezoneValue).time()} to{' '}
-                          {timezoneBasedEndTime.goto(timezoneValue).time()}
+                          {timezoneBasedStartTime?.goto(timezoneValue).time()} to{' '}
+                          {timezoneBasedEndTime?.goto(timezoneValue).time()}
                         </b>
                       </p>
                       <br />
+                      <AddToCal
+                        startsAt={timezoneBasedStartTime
+                          .goto(timezoneValue)
+                          .format('iso')
+                          .toString()}
+                        endsAt={timezoneBasedEndTime
+                          .goto(timezoneValue)
+                          .format('iso')
+                          .toString()}
+                        location={timezoneValue}
+                        title={`${speaker?.talk?.title} by ${speaker?.name}` || title}
+                        desc={
+                          `${speaker?.talk?.description} https://flutterVikings.com` || ''
+                        }
+                      />
                     </>
                   )}
                 </SpeakerImage>

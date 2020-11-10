@@ -1,4 +1,3 @@
-import AddToCalendar from '@culturehq/add-to-calendar';
 import React, { useState } from 'react';
 import { useAgenda } from '../../hooks/useAgenda';
 import { Container, MainTitle, Section } from '../common';
@@ -8,10 +7,6 @@ import spacetime from 'spacetime';
 // @ts-ignore
 import TimezoneSelect from 'react-timezone-select';
 
-// @ts-ignore
-// tslint:disable-next-line
-import '@culturehq/add-to-calendar/dist/styles.css';
-
 import { Agenda } from '../../models/Agenda';
 import styled from 'styled-components';
 import GatsbyImage from 'gatsby-image';
@@ -19,32 +14,8 @@ import { useSpeakers } from '../../hooks/useSpeakers';
 import { useAllFiles } from '../../hooks/useAllFiles';
 import { Link } from 'gatsby';
 import { Timezone } from '../../models/Timezone';
+import { AddToCal } from '../common/AddToCal';
 
-const AddToCal = ({
-  startTime,
-  date,
-  endTime,
-  title,
-  desc,
-}: {
-  startTime: string;
-  date: string;
-  endTime: string;
-  title: string;
-  desc: string;
-}) => {
-  return (
-    <AddToCalendar
-      event={{
-        name: `FlutterVikings - ${title}`,
-        details: desc,
-        location: 'Europe/Oslo',
-        startsAt: `${date}T${startTime}:00+01:00`,
-        endsAt: `${date}T${endTime}:00+01:00`,
-      }}
-    />
-  );
-};
 interface Props {
   agendaDay: Agenda;
   selectedTimezone: Timezone;
@@ -84,15 +55,21 @@ const AgendaDay = ({ agendaDay, selectedTimezone }: Props) => {
                 <span className="Event-name">{speaker?.talk?.title || title}</span>
                 {speaker && (
                   <>
-                    {/* <AddToCal
-                      startTime={startTime}
-                      endTime={endTime}
-                      date={dateISO}
+                    <AddToCal
+                      startsAt={timezoneBasedStartTime
+                        .goto(timezoneValue)
+                        .format('iso')
+                        .toString()}
+                      endsAt={timezoneBasedEndTime
+                        .goto(timezoneValue)
+                        .format('iso')
+                        .toString()}
+                      location={timezoneValue}
                       title={`${speaker?.talk?.title} by ${speaker?.name}` || title}
                       desc={
                         `${speaker?.talk?.description} https://flutterVikings.com` || ''
                       }
-                    /> */}
+                    />
                     <Link to={`/speakers/${speaker.id}`} className="SpeakerInformation">
                       <div className="SpeakerInformation-pictureWrapper">
                         <GatsbyImage
