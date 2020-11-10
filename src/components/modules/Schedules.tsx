@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useAgenda } from '../../hooks/useAgenda';
 import { Container, MainTitle, Section } from '../common';
 import config from '../../config';
+import spacetime from 'spacetime';
 
 // @ts-ignore
 import TimezoneSelect from 'react-timezone-select';
@@ -52,7 +53,8 @@ interface Props {
 const AgendaDay = ({ agendaDay, selectedTimezone }: Props) => {
   const { name, date, dateISO, programs } = agendaDay;
   const timezoneValue = selectedTimezone.value;
-  const [year, month, day] = dateISO.split('-');
+  const spaceDate = spacetime(dateISO, config.defaultTimezone.value);
+
   return (
     <div className="Agenda-column Agenda-column">
       <div className="Agenda-columnTitle">
@@ -60,39 +62,11 @@ const AgendaDay = ({ agendaDay, selectedTimezone }: Props) => {
         <p className="Agenda-date">{date}</p>
         <span className="Agenda-dash" />
       </div>
-      {/* Event--ligthningTalk */}
       {programs &&
         programs.map((program, i) => {
           const { title, startTime, endTime, speaker, isActivity, winnerTime } = program;
-          const [startTimeH, StartTimeMinute] = startTime.split(':');
-          const [endTimeH, endTimeMinute] = endTime.split(':');
-
-          const timezoneBasedStartTime = new Date(
-            Number(year),
-            Number(month),
-            Number(day),
-            Number(startTimeH),
-            Number(StartTimeMinute),
-          )
-            .toLocaleString('en-US', {
-              timeZone: timezoneValue,
-            })
-            .split(',')[1]
-            .replace(/:\d{2}\s/, ' ');
-
-          const timezoneBasedEndTime = new Date(
-            Number(year),
-            Number(month),
-            Number(day),
-            Number(endTimeH),
-            Number(endTimeMinute),
-          )
-            .toLocaleString('en-US', {
-              timeZone: timezoneValue,
-            })
-            .split(',')[1]
-            .replace(/:\d{2}\s/, ' ');
-
+          const timezoneBasedStartTime = spaceDate.time(startTime);
+          const timezoneBasedEndTime = spaceDate.time(endTime);
           return (
             <div
               key={i}
@@ -103,7 +77,8 @@ const AgendaDay = ({ agendaDay, selectedTimezone }: Props) => {
               }`}
             >
               <div className="Event-time">
-                {timezoneBasedStartTime} - {timezoneBasedEndTime}
+                {timezoneBasedStartTime.goto(timezoneValue).time()} -{' '}
+                {timezoneBasedEndTime.goto(timezoneValue).time()}
               </div>
               <div className="Event-details">
                 <span className="Event-name">{speaker?.talk?.title || title}</span>
@@ -230,15 +205,21 @@ const Schedules = () => {
   );
 
   const setTab = (index: number) => () => seTSelectedTab(index);
+  const now = spacetime.now();
+
   return (
     <>
       <Section>
         <Container>
           <MainTitle title="Event Agenda" titleStrokeText={'Schedule'} />
           <Notice>
-            Time is based on {selectedTimezone.altName} ({selectedTimezone.abbrev})
+            <p>
+              Your time now is <b>{now.format('nice')}</b>
+            </p>
             <br />
-            <br />
+            <p>
+              Time is based on {selectedTimezone.altName} ({selectedTimezone.abbrev})
+            </p>
             <TimezoneSelect value={selectedTimezone} onChange={setSelectedTimezone} />
           </Notice>
           <div className="Agenda-twoColumnContainer">

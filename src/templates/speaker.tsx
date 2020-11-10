@@ -9,6 +9,7 @@ import { Agenda } from '../models/Agenda';
 import { Speaker } from '../models/Speaker';
 import config from '../config';
 import { Timezone } from '../models/Timezone';
+import spacetime from 'spacetime';
 // @ts-ignore
 import TimezoneSelect from 'react-timezone-select';
 
@@ -36,56 +37,21 @@ export default ({
   };
 }) => {
   const { speaker, image, agenda } = data;
-
-  const speakerTimeSlot = agenda
-    ? agenda.programs.filter((slot) => slot.speaker === speaker.id)[0]
-    : null;
-
+  let speakerTimeSlot;
+  let timezoneValue;
+  let timezoneBasedStartTime;
+  let timezoneBasedEndTime;
+  let spaceDate;
   const [selectedTimezone, setSelectedTimezone] = useState<Timezone>(
     config.defaultTimezone,
   );
-  const timezoneValue = selectedTimezone.value;
-
-  const [year, month, day] = agenda ? agenda.dateISO.split('-') : [];
-
-  const [startTimeH, StartTimeMinute] = speakerTimeSlot
-    ? speakerTimeSlot.startTime.split(':')
-    : [];
-
-  const [endTimeH, endTimeMinute] = speakerTimeSlot
-    ? speakerTimeSlot.endTime.split(':')
-    : [];
-
-  const timezoneBasedStartTime = speakerTimeSlot
-    ? new Date(
-        Number(year),
-        Number(month),
-        Number(day),
-        Number(startTimeH),
-        Number(StartTimeMinute),
-      )
-        .toLocaleString('en-US', {
-          timeZone: timezoneValue,
-        })
-        .split(',')[1]
-        .replace(/:\d{2}\s/, ' ')
-    : '';
-
-  const timezoneBasedEndTime = speakerTimeSlot
-    ? new Date(
-        Number(year),
-        Number(month),
-        Number(day),
-        Number(endTimeH),
-        Number(endTimeMinute),
-      )
-        .toLocaleString('en-US', {
-          timeZone: timezoneValue,
-        })
-        .split(',')[1]
-        .replace(/:\d{2}\s/, ' ')
-    : '';
-
+  if (agenda) {
+    speakerTimeSlot = agenda.programs.filter((slot) => slot.speaker === speaker.id)[0];
+    timezoneValue = selectedTimezone.value;
+    spaceDate = spacetime(agenda.dateISO, config.defaultTimezone.value);
+    timezoneBasedStartTime = spaceDate.time(speakerTimeSlot.startTime);
+    timezoneBasedEndTime = spaceDate.time(speakerTimeSlot.endTime);
+  }
   return (
     <>
       <Layout>
@@ -132,7 +98,8 @@ export default ({
                       <p>
                         Time:{' '}
                         <b>
-                          {timezoneBasedStartTime} to {timezoneBasedEndTime}
+                          {timezoneBasedStartTime.goto(timezoneValue).time()} to{' '}
+                          {timezoneBasedEndTime.goto(timezoneValue).time()}
                         </b>
                       </p>
                       <br />
