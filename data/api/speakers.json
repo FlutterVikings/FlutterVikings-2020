@@ -27,8 +27,8 @@
       "linkedin": ""
     },
     "talk": {
-      "title": "The new ScaffoldMessenger widget and good design patterns for it",
-      "description": "",
+      "title": "SnackBar Delivery: Unpacking the ScaffoldMessenger",
+      "description": "Learn about the ScaffoldMessenger widget, and how to use it in your application so your SnackBars can take flight.",
       "lightening": false
     },
     "bio": "Kate is Flutter and Dart team member."
