@@ -1,13 +1,12 @@
 import React from 'react';
 import { Container, Content, Header, Layout, Section, Wrapper } from '../components';
-import { Helmet } from 'react-helmet';
-import config from '../config';
+import { SEO } from '../components/base/SEO';
 
 export default () => {
   return (
     <Layout>
       <Section>
-        <Helmet title={`Code of Conduct | ${config.siteTitle}`} />
+        <SEO title={`Code of Conduct`} />
         <Container>
           <Header>
             <div style={{ justifyContent: 'center', display: 'flex' }}>
@@ -21,7 +20,6 @@ export default () => {
           </Header>
           <Content>
             <div className="field__item">
-              {' '}
               <p>
                 This policy is a living document and subject to refinement and updates in
                 the future. Last updated on 07 October 2020.
@@ -49,7 +47,7 @@ export default () => {
                 <li>
                   Offensive comments related to{' '}
                   <a
-                    class="blue"
+                    className="blue"
                     href="https://www.stonewall.org.uk/help-advice/glossary-terms"
                   >
                     gender, gender identity and expression, sexual orientation
@@ -129,7 +127,7 @@ export default () => {
                 <li>
                   Email:{' '}
                   <a
-                    class="blue"
+                    className="blue"
                     target="_blank"
                     rel="noopener noreferrer"
                     href="mailto:team@flutterVikings.com?subject=Flutter%20Vikings%20Code%20of%20Conduct"
@@ -168,7 +166,7 @@ export default () => {
               <p>
                 Our updated Code of Conduct was based on resources from{' '}
                 <a
-                  class="blue"
+                  className="blue"
                   href="http://geekfeminism.wikia.com/wiki/Community_anti-harassment/Policy"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -177,7 +175,7 @@ export default () => {
                 </a>{' '}
                 and the{' '}
                 <a
-                  class="blue"
+                  className="blue"
                   href="https://2018.xoxofest.com/conduct"
                   target="_blank"
                   rel="noopener noreferrer"

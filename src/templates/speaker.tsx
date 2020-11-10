@@ -1,0 +1,252 @@
+import { graphql, Link } from 'gatsby';
+import GatsbyImage, { FluidObject } from 'gatsby-image';
+import React, { useState } from 'react';
+import { Container } from 'styled-bootstrap-grid';
+import styled from 'styled-components';
+import { Layout, Section, Header, Content } from '../components';
+import { SEO } from '../components/base/SEO';
+import { Agenda } from '../models/Agenda';
+import { Speaker } from '../models/Speaker';
+import config from '../config';
+import { Timezone } from '../models/Timezone';
+// @ts-ignore
+import TimezoneSelect from 'react-timezone-select';
+
+const SpeakerRow = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+const SpeakerImage = styled.div`
+  flex: 1;
+`;
+const SpeakerInfo = styled.div`
+  padding: 0 4rem;
+  flex: 1;
+`;
+
+export default ({
+  path,
+  data,
+}: {
+  path: string;
+  data: {
+    agenda: Agenda;
+    speaker: Speaker;
+    image: { childImageSharp: { fluid: FluidObject } };
+  };
+}) => {
+  const { speaker, image, agenda } = data;
+
+  const speakerTimeSlot = agenda
+    ? agenda.programs.filter((slot) => slot.speaker === speaker.id)[0]
+    : null;
+
+  const [selectedTimezone, setSelectedTimezone] = useState<Timezone>(
+    config.defaultTimezone,
+  );
+  const timezoneValue = selectedTimezone.value;
+
+  const [year, month, day] = agenda ? agenda.dateISO.split('-') : [];
+
+  const [startTimeH, StartTimeMinute] = speakerTimeSlot
+    ? speakerTimeSlot.startTime.split(':')
+    : [];
+
+  const [endTimeH, endTimeMinute] = speakerTimeSlot
+    ? speakerTimeSlot.endTime.split(':')
+    : [];
+
+  const timezoneBasedStartTime = speakerTimeSlot
+    ? new Date(
+        Number(year),
+        Number(month),
+        Number(day),
+        Number(startTimeH),
+        Number(StartTimeMinute),
+      )
+        .toLocaleString('en-US', {
+          timeZone: timezoneValue,
+        })
+        .split(',')[1]
+        .replace(/:\d{2}\s/, ' ')
+    : '';
+
+  const timezoneBasedEndTime = speakerTimeSlot
+    ? new Date(
+        Number(year),
+        Number(month),
+        Number(day),
+        Number(endTimeH),
+        Number(endTimeMinute),
+      )
+        .toLocaleString('en-US', {
+          timeZone: timezoneValue,
+        })
+        .split(',')[1]
+        .replace(/:\d{2}\s/, ' ')
+    : '';
+
+  return (
+    <>
+      <Layout>
+        <Section>
+          <SEO
+            description={speaker.bio}
+            path={path}
+            title={speaker.name + ` Online'20 Speaker `}
+          />
+          <Container>
+            <Header>
+              <div style={{ justifyContent: 'center', display: 'flex' }}>
+                <img
+                  alt="FlutterVikings"
+                  className="SceneOverlay-logo"
+                  src="/assets/logo.svg"
+                />
+              </div>
+              <h1 className="font__caesar size__h1">{speaker.name}</h1>
+            </Header>
+            <Content>
+              <SpeakerRow>
+                <SpeakerImage>
+                  <GatsbyImage fluid={image.childImageSharp.fluid} />
+                  <br />
+                  {agenda && speakerTimeSlot && (
+                    <>
+                      <p>
+                        Time is based on {selectedTimezone.altName} (
+                        {selectedTimezone.abbrev})
+                      </p>
+                      <br />
+                      <TimezoneSelect
+                        value={selectedTimezone}
+                        onChange={setSelectedTimezone}
+                      />
+                      <br />
+                      <p>
+                        Date:{' '}
+                        <b>
+                          {agenda.name}, {agenda.date}
+                        </b>
+                      </p>
+                      <p>
+                        Time:{' '}
+                        <b>
+                          {timezoneBasedStartTime} to {timezoneBasedEndTime}
+                        </b>
+                      </p>
+                      <br />
+                    </>
+                  )}
+                </SpeakerImage>
+                <SpeakerInfo>
+                  <p>
+                    Name: <b>{speaker.name}</b>
+                  </p>
+                  <p>
+                    Company: <b>{speaker.company}</b>
+                  </p>
+                  <p>
+                    Biography: <br />
+                    <b>{speaker.bio}</b>
+                  </p>
+                  <br />
+                  <h2 className="font__caesar">Talk</h2>
+                  <br />
+                  <p>
+                    Title: <br />
+                    <b>{speaker.talk.title}</b>
+                  </p>
+                  <br />
+                  <p>
+                    Abstract:
+                    <br /> <b>{speaker.talk.description}</b>
+                  </p>
+                  <br />
+                  <h2 className="font__caesar">Social Media</h2>
+                  <p>
+                    Twitter:{' '}
+                    <a
+                      rel="noopener noreferrer nofollow"
+                      target="_blank"
+                      href={speaker.social.twitter}
+                    >
+                      {speaker.social.twitter}
+                    </a>
+                  </p>
+                  <p>
+                    Linkedin:{' '}
+                    <a rel="noopener noreferrer nofollow" href={speaker.social.linkedin}>
+                      {speaker.social.linkedin}
+                    </a>
+                  </p>
+                  <p>
+                    Github:
+                    <a rel="noopener noreferrer nofollow" href={speaker.social.github}>
+                      {speaker.social.github}
+                    </a>
+                  </p>
+                </SpeakerInfo>
+              </SpeakerRow>
+              <br />
+              <br />
+              <br />
+              <div className="CTA-actions" style={{ textAlign: 'center' }}>
+                <Link className="Btn Btn--ticket Btn--cta" to="/">
+                  Back to homepage
+                </Link>
+              </div>
+            </Content>
+          </Container>
+        </Section>
+      </Layout>
+    </>
+  );
+};
+
+export const pageQuery = graphql`
+  query($speakerId: String!) {
+    agenda: agendaJson(programs: { elemMatch: { speaker: { eq: $speakerId } } }) {
+      name
+      date
+      dateISO
+      programs {
+        startTime
+        endTime
+        speaker
+      }
+    }
+
+    image: file(name: { eq: $speakerId }, relativeDirectory: { eq: "speakers" }) {
+      childImageSharp {
+        fluid(
+          maxWidth: 700
+          maxHeight: 700
+          quality: 100
+          cropFocus: CENTER
+          grayscale: true
+        ) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    speaker: speakersJson(id: { eq: $speakerId }) {
+      id
+      name
+      social {
+        twitter
+        github
+        linkedin
+      }
+      talk {
+        title
+        description
+        lightening
+        coSpeaker
+      }
+      company
+      title
+      bio
+    }
+  }
+`;

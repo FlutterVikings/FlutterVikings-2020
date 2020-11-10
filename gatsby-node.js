@@ -4,13 +4,30 @@ const config = require('./src/config').default;
 
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
-  if (
-    node.internal.type === 'MarkdownRemark' &&
-    _.has(node, 'frontmatter') &&
-    _.has(node.frontmatter, 'title')
-  ) {
-    const slug = `${_.kebabCase(node.frontmatter.title)}`;
-    createNodeField({ node, name: 'slug', value: slug });
-  }
 };
 
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions;
+  const result = await graphql(`
+    query {
+      speakers: allSpeakersJson {
+        edges {
+          node {
+            id
+          }
+        }
+      }
+    }
+  `);
+
+  result.data.speakers.edges.forEach(({ node }) => {
+    createPage({
+      path: `/speakers/${node.id}`,
+      component: path.resolve(`./src/templates/speaker.tsx`),
+      context: {
+        speakerId: node.id,
+        slug: node.id,
+      },
+    });
+  });
+};

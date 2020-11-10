@@ -2,6 +2,7 @@ import AddToCalendar from '@culturehq/add-to-calendar';
 import React, { useState } from 'react';
 import { useAgenda } from '../../hooks/useAgenda';
 import { Container, MainTitle, Section } from '../common';
+import config from '../../config';
 
 // @ts-ignore
 import TimezoneSelect from 'react-timezone-select';
@@ -15,6 +16,8 @@ import styled from 'styled-components';
 import GatsbyImage from 'gatsby-image';
 import { useSpeakers } from '../../hooks/useSpeakers';
 import { useAllFiles } from '../../hooks/useAllFiles';
+import { Link } from 'gatsby';
+import { Timezone } from '../../models/Timezone';
 
 const AddToCal = ({
   startTime,
@@ -115,11 +118,7 @@ const AgendaDay = ({ agendaDay, selectedTimezone }: Props) => {
                         `${speaker?.talk?.description} https://flutterVikings.com` || ''
                       }
                     /> */}
-                    <a
-                      href={`/#${speaker.id}`}
-                      target="blank"
-                      className="SpeakerInformation"
-                    >
+                    <Link to={`/speakers/${speaker.id}`} className="SpeakerInformation">
                       <div className="SpeakerInformation-pictureWrapper">
                         <GatsbyImage
                           className="SpeakerInformation-picture"
@@ -127,11 +126,10 @@ const AgendaDay = ({ agendaDay, selectedTimezone }: Props) => {
                         />
                       </div>
                       <span className="SpeakerInformation-name">{speaker.name}</span>
-                    </a>
+                    </Link>
                     {speaker?.talk.coSpeaker && (
-                      <a
-                        href={`/#${speaker.id}`}
-                        target="blank"
+                      <Link
+                        to={`/speakers/${speaker?.talk.coSpeaker.id}`}
                         className="SpeakerInformation"
                       >
                         <div className="SpeakerInformation-pictureWrapper">
@@ -143,7 +141,7 @@ const AgendaDay = ({ agendaDay, selectedTimezone }: Props) => {
                         <span className="SpeakerInformation-name">
                           {speaker?.talk.coSpeaker.name}
                         </span>
-                      </a>
+                      </Link>
                     )}
                   </>
                 )}
@@ -221,24 +219,15 @@ const Notice = styled.div`
       props.theme.isDark ? props.theme.colors.white : props.theme.colors.black};
   }
 `;
-interface Timezone {
-  value: string;
-  label: string;
-  altName: string;
-  abbrev: string;
-}
+
 const Schedules = () => {
-  const defaultTimezone = {
-    value: 'Europe/Amsterdam',
-    label: '(GMT+1:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna',
-    altName: 'Central European Time',
-    abbrev: 'CET',
-  };
   const images = useAllFiles();
   const speakers = useSpeakers(images);
   const agenda = useAgenda(speakers);
   const [selectedTab, seTSelectedTab] = useState(0);
-  const [selectedTimezone, setSelectedTimezone] = useState<Timezone>(defaultTimezone);
+  const [selectedTimezone, setSelectedTimezone] = useState<Timezone>(
+    config.defaultTimezone,
+  );
 
   const setTab = (index: number) => () => seTSelectedTab(index);
   return (

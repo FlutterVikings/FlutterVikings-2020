@@ -6,7 +6,8 @@ interface Program {
   endTime: string;
   isActivity?: boolean;
   winnerTime?: boolean;
-  speaker?: Speaker;
+  speaker?: string | Speaker;
+  coSpeaker?: string;
 }
 export interface Agenda {
   name: string;

@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import { ThemeConsumer } from 'styled-components';
 import { useAllFiles } from '../../hooks/useAllFiles';
@@ -19,7 +20,11 @@ const Speakers = () => {
               <MainTitle title="Amazing Line-Up" titleStrokeText={'speakers'} />
               <ResponsiveGrid>
                 {speakers.map((member) => {
-                  return <FaceImage key={member.id} member={member} />;
+                  return (
+                    <Link key={member.id} to={`/speakers/${member.id}`}>
+                      <FaceImage member={member} />
+                    </Link>
+                  );
                 })}
               </ResponsiveGrid>
             </Container>

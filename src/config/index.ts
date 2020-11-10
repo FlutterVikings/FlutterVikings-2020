@@ -37,5 +37,11 @@ export default {
 
   //
   Google_Tag_Manager_ID: 'GTM-MFVN9Q8',
+  defaultTimezone: {
+    value: 'Europe/Amsterdam',
+    label: '(GMT+1:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna',
+    altName: 'Central European Time',
+    abbrev: 'CET',
+  },
   POST_PER_PAGE: 4,
 };
