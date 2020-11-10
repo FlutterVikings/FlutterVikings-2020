@@ -40,8 +40,8 @@ export default ({
   const { speaker, image, agenda } = data;
   let speakerTimeSlot;
   let timezoneValue = config.defaultTimezone.value;
-  let timezoneBasedStartTime;
-  let timezoneBasedEndTime;
+  let timezoneBasedStartTime = spacetime.now(config.defaultTimezone.value);
+  let timezoneBasedEndTime = spacetime.now(config.defaultTimezone.value);
   let spaceDate;
   const [selectedTimezone, setSelectedTimezone] = useState<Timezone>(
     config.defaultTimezone,
@@ -114,7 +114,10 @@ export default ({
                           .format('iso')
                           .toString()}
                         location={timezoneValue}
-                        title={`${speaker?.talk?.title} by ${speaker?.name}` || title}
+                        title={
+                          `${speaker?.talk?.title} by ${speaker?.name}` ||
+                          speakerTimeSlot.title
+                        }
                         desc={
                           `${speaker?.talk?.description} https://flutterVikings.com` || ''
                         }
