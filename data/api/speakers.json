@@ -193,17 +193,17 @@
     "title": "",
     "company": "",
     "social": {
-      "twitter": "",
+      "twitter": "https://twitter.com/rihanna_ke",
       "github": "",
-      "linkedin": ""
+      "linkedin": "http://linkedin.com/in/rihanna-kedir-05068568"
     },
     "talk": {
       "title": "Leveraging Flutter for web support",
-      "description": "",
+      "description": "In this talk we explore how to leverage Flutter Web to improve the experience of developers and users in the process of software delivery and onboarding.",
       "lightening": false,
       "coSpeaker": "juna_salviati"
     },
-    "bio": ""
+    "bio": "Rihanna is a Software Engineer and crafter. She is GDE in Web, Dart, and Flutter as well as a Women tech-makers ambassador and GDG lead. Rihanna strongly believes in the importance of sharing knowledge and experience; in her free time, she volunteers as a mentor and often organizes various tech events and meetups."
   },
   {
     "id": "aloos_deniel",
@@ -259,19 +259,19 @@
   {
     "id": "juna_salviati",
     "name": "Juna Salviati",
-    "title": "",
+    "title": "Software Engineer",
     "company": "",
     "social": {
-      "twitter": "",
+      "twitter": "http://twitter.com/1littleendian",
       "github": "",
       "linkedin": ""
     },
     "talk": {
       "title": "Leveraging Flutter for web support",
-      "description": "",
+      "description": "In this talk we explore how to leverage Flutter Web to improve the experience of developers and users in the process of software delivery and onboarding.",
       "lightening": false
     },
-    "bio": ""
+    "bio": "Juna has always been curious about technology and computers so she wrote her first line of code at 10 and graduated as a Software Engineer. She is GDGRome co-leader and Women Techmakers ambassador. She has always been cultivating a passion for classical studies and humanities and is fascinated by human-machine interaction."
   },
   {
     "id": "damodar_lohani",
