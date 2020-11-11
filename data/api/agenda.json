@@ -19,8 +19,7 @@
         "title": "talk",
         "startTime": "15:40",
         "endTime": "16:10",
-        "speaker": "rihanna_kedir",
-        "coSpeaker": "juna_salviati"
+        "speaker": "merve_arslan"
       },
       {
         "title": "activity",
@@ -64,7 +63,8 @@
         "title": "talk",
         "startTime": "18:15",
         "endTime": "18:40",
-        "speaker": "merve_arslan"
+        "speaker": "rihanna_kedir",
+        "coSpeaker": "juna_salviati"
       },
       {
         "title": "Winners Announcement",
