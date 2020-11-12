@@ -62,7 +62,7 @@
     },
     "talk": {
       "title": "Widget Testing for Dummies",
-      "description": "Do you test your code?  Let's get straight to the point. If you are someone who shies away on this question,  you are not a bad developer. You are just someone who hasn't given testing the attention it needs.And this talk won't be about how amazing testing is, or how many categories of testing is provided by the Flutter framework. You would know that from this as well https://flutter.dev/docs/testing.But this talk is just about Widget Testing, because it's special to Flutter. And if everything is a widget, everything SHOULD be tested. And I want to dig deeper into this.",
+      "description": "Do you test your code?  Let's get straight to the point. If you are someone who shies away on this question,  you are not a bad developer. You are just someone who hasn't given testing the attention it needs.And this talk won't be about how amazing testing is, or how many categories of testing is provided by the Flutter framework. <br/> You would know that from this as well https://flutter.dev/docs/testing.But this talk is just about Widget Testing, because it's special to Flutter. And if everything is a widget, everything SHOULD be tested. And I want to dig deeper into this.",
       "lightening": false
     },
     "bio": "Pooja Bhaumik, an early Flutter adopter turned into Google Developer Expert for Flutter, who loves to share her knowledge through blog posts, public speaking, Youtube videos, and open source contributions. Also a Sr. Engineer in Bounce, she is building the next best solutions for mobility in India. She is also passionate about diversity & inclusion and has started a couple of communities, the current one being WomenDroid in Bengaluru, to support personal & professional growth objectives for women developers."
@@ -70,8 +70,8 @@
   {
     "id": "felix_angelov",
     "name": "Felix Angelov",
-    "title": "",
-    "company": "",
+    "title": "Software engineer",
+    "company": "very good ventures",
     "social": {
       "twitter": "",
       "github": "",
@@ -82,7 +82,7 @@
       "description": "",
       "lightening": false
     },
-    "bio": ""
+    "bio": "Software engineer by day, software engineer by night. very good ventures. creator of the bloc library."
   },
   {
     "id": "danielle_cox",
@@ -95,11 +95,11 @@
       "linkedin": ""
     },
     "talk": {
-      "title": "",
-      "description": "",
+      "title": "TBA",
+      "description": "TBA",
       "lightening": false
     },
-    "bio": ""
+    "bio": "@Flutterdev advocate and developer who currently pays the bills with android and php.  #flutterista #flutterfly I am not associated with Google."
   },
   {
     "id": "simon_lightfoot",
@@ -131,7 +131,7 @@
     },
     "talk": {
       "title": "FlutterFire: Query Like a Hero",
-      "description": "",
+      "description": "Flutter and Firebase are a perfect combination to make modern reactive apps, and FlutterFire is the client SDKs that help us make the most out of Firebase in Flutter. This talk will go through some important tips on querying data from Firestore inside a Flutter app.",
       "lightening": false
     },
     "bio": ""
@@ -357,23 +357,6 @@
       "lightening": false
     },
     "bio": "App developer who has been using and creating Flutter content for over two years."
-  },
-  {
-    "id": "pawan_kumar",
-    "name": "Pawan Kumar",
-    "title": "",
-    "company": "",
-    "social": {
-      "twitter": "",
-      "github": "",
-      "linkedin": ""
-    },
-    "talk": {
-      "title": "TBA",
-      "description": "",
-      "lightening": false
-    },
-    "bio": "Hi, I am Pawan Kumar, Google Developer Expert for Flutter, Firebase & Web Tech. I work at Frontier as a head of Mobile Engineering. I am a youtuber having channel MTECHVIRAL."
   },
   {
     "id": "muhammed_salih_guler",
