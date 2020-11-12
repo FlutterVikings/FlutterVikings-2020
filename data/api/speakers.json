@@ -174,18 +174,18 @@
     "id": "lukas_klingsbo",
     "name": "Lukas Klingsbo",
     "title": "Flutter Developer",
-    "company": "Flame",
+    "company": "MindLevel AB",
     "social": {
       "twitter": "https://twitter.com/spyd0n",
       "github": "https://github.com/spydon/",
-      "linkedin": ""
+      "linkedin": "https://www.linkedin.com/in/spydon/"
     },
     "talk": {
       "title": "Creating games with physics in Flutter",
       "description": "",
       "lightening": false
     },
-    "bio": "Programmer, backpacker, climber and slightly more crazy than you are allowed to be."
+    "bio": "Programmer, backpacker, keyboard builder, climber and slightly more crazy than you are allowed to be."
   },
   {
     "id": "rihanna_kedir",
