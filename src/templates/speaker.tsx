@@ -146,7 +146,10 @@ export default ({
                   <br />
                   <p>
                     Abstract:
-                    <br /> <b>{speaker.talk.description}</b>
+                    <br />{' '}
+                    <b
+                      dangerouslySetInnerHTML={{ __html: speaker.talk.description ?? '' }}
+                    />
                   </p>
                   <br />
                   <h2 className="font__caesar">Social Media</h2>

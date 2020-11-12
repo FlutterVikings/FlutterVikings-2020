@@ -378,18 +378,18 @@
   {
     "id": "muhammed_salih_guler",
     "name": "Muhammed Salih Guler",
-    "title": "",
+    "title": " Senior Mobile Engineer, Superlist",
     "company": "",
     "social": {
-      "twitter": "",
-      "github": "",
+      "twitter": "https://twitter.com/salihgueler",
+      "github": "https://github.com/salihgueler",
       "linkedin": ""
     },
     "talk": {
-      "title": "TBA",
-      "description": "",
+      "title": "How to add Flutter to your existing app",
+      "description": "From the day that it's announced, Flutter is attracting so many developers from different backgrounds. It gives everyone a chance to build an application from a single codebase and deploy it to Android, iOS, Desktop, and Web. But not everyone is in the position to abandon an existing codebase and start from scratch. Luckily Flutter got you covered if you want some of the great Flutter features on your ongoing application. <br/>In this talk, we will have a look at how you can add Flutter to your ongoing project by showing a real-life example app with thousands of users and, we will talk about how you can rewrite your existing applications step by step with Flutter.",
       "lightening": false
     },
-    "bio": ""
+    "bio": "Salih is a Berlin based Android Engineer who is a Google Developer Expert for Flutter and Dart. He likes sharing his knowledge with the people by mentoring aspiring developers, blogging and talking at conferences."
   }
 ]
