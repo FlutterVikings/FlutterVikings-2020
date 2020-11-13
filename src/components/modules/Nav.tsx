@@ -1,5 +1,6 @@
 import { Link } from '@reach/router';
 import React, { useEffect, useMemo, useState } from 'react';
+import ScrollIntoView from 'react-scroll-into-view';
 import { ThemeConsumer } from 'styled-components';
 import config from '../../config';
 import { useScrollPosition } from '../../hooks/useScrollPosition';
@@ -23,6 +24,15 @@ const Nav = () => {
     false,
     400,
   );
+
+  const closeNavDefaultPrevent = (e) => {
+    e.preventDefault();
+    setIsOpen(false);
+  };
+
+  const closeNav = () => {
+    setIsOpen(false);
+  };
 
   useEffect(() => {
     // Prevent scrolling on mount
@@ -62,7 +72,7 @@ const Nav = () => {
                   </button>
                 </div>
 
-                <a className="Nav-barLogo" href="{{ site.data.rubyconfpt.no_anim_url }}">
+                <a className="Nav-barLogo" href="/">
                   <img alt="FlutterVikings" className="NavLogo" src="/assets/logo.svg" />
                   <span className="Nav-title">
                     <span className="font__caesar">Flutter Vikings</span>
@@ -83,7 +93,9 @@ const Nav = () => {
                       <h2 className="NavContent-title">Where do you want to go?</h2>
                       <ul className="NavContent-items">
                         <li className="NavContent-item">
-                          <Link to={''}>Homepage</Link>
+                          <Link to={''} onClick={closeNav}>
+                            Homepage
+                          </Link>
                         </li>
                         {/* <li className="NavContent-item">
                           <a href="#">Speakers</a>
@@ -92,7 +104,16 @@ const Nav = () => {
                           <a href="#">Agenda</a>
                         </li> */}
                         <li className="NavContent-item">
-                          <Link to={'code-of-conduct'}>Code of Conduct</Link>
+                          <Link to={'code-of-conduct'} onClick={closeNav}>
+                            Code of Conduct
+                          </Link>
+                        </li>
+                        <li className="NavContent-item">
+                          <ScrollIntoView selector="#agenda">
+                            <Link to={''} onClick={closeNavDefaultPrevent}>
+                              Our program
+                            </Link>
+                          </ScrollIntoView>
                         </li>
                       </ul>
                     </section>
@@ -160,7 +181,6 @@ const Nav = () => {
                             name="mc-embedded-subscribe-form"
                             className="NewsletterForm"
                             target="_blank"
-                            rel="noopener noreferrer"
                           >
                             <div className="NewsletterForm-input">
                               <span className="InputHoshi InputHoshi--nav">

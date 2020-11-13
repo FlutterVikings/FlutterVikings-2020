@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollIntoView from 'react-scroll-into-view';
 import config from '../../config';
 import { useWindowSize } from '../../hooks/useWindowSize';
 
@@ -48,7 +49,7 @@ const Scene = () => {
           <p className="SceneOverlay-date">17-19 November, 2020</p>
           <p className="SceneOverlay-location">3 Days Online</p>
         </div>
-        <div className="CTA-actions">
+        <div className="CTA-actions" style={{ display: 'flex' }}>
           <a
             className="Btn Btn--ticket Btn--cta"
             target="_blank"
@@ -57,6 +58,10 @@ const Scene = () => {
           >
             Get your FREE ticket
           </a>
+
+          <ScrollIntoView selector="#agenda">
+            <button className="Btn Btn--cfp Btn--cta">Our program</button>
+          </ScrollIntoView>
         </div>
       </div>
     </section>

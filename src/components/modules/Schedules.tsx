@@ -187,7 +187,7 @@ const Schedules = () => {
   return (
     <>
       <Section>
-        <Container>
+        <Container id="agenda">
           <MainTitle title="Event Agenda" titleStrokeText={'Schedule'} />
           <Notice>
             <p>

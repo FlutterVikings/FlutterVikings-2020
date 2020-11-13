@@ -94,6 +94,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
+    "react-scroll": "^1.8.1",
+    "react-scroll-into-view": "^1.8.2",
     "react-timezone-select": "^0.9.7",
     "spacetime": "^6.9.0",
     "styled-bootstrap-grid": "^3.1.0",
