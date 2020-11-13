@@ -1,8 +1,8 @@
-function invokeServiceWorkerUpdateFlow(registration) {
-  notification.show('New version of the app is available. Refresh now');
-  notification.addEventListener('click', () => {
+function invokeServiceWorkerUpdateFlow() {
+  const confirmed = confirm('New version of the app is available. Refresh now');
+  if (confirmed) {
     window.location.reload();
-  });
+  }
 }
 
 if ('serviceWorker' in navigator) {
