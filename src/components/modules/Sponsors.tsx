@@ -5,7 +5,7 @@ import { useSponsors } from '../../hooks/useSponsors';
 import { RelativeDirectory } from '../../models/file';
 import { Sponsor } from '../../models/Sponsor';
 import { VikingTheme } from '../../theme';
-import { Container, MainTitle, Section, FetchSvg, Content } from '../common';
+import { Container, MainTitle, Section, FetchSvg } from '../common';
 import { ResponsiveGrid } from '../common/ResponsiveGrid';
 import { SponsorshipEmailLink } from './CommonSponsors';
 
