@@ -60,7 +60,7 @@ const Scene = () => {
           </a>
 
           <ScrollIntoView selector="#agenda">
-            <button className="Btn Btn--cfp Btn--cta">Our program</button>
+            <button className="Btn Btn--cfp Btn--cta">Program/Agenda</button>
           </ScrollIntoView>
         </div>
       </div>
