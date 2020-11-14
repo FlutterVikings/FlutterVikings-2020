@@ -41,5 +41,4 @@ async function handleServiceWorker() {
     }
   }
 }
-
 handleServiceWorker();
