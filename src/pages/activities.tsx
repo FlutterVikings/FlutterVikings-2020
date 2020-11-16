@@ -11,9 +11,13 @@ const ActivityRow = styled.div`
   display: flex;
 `;
 
+const InlineThing = styled.div`
+  display: inline-block;
+`;
+
 const SmallHeader = styled.header`
   position: relative;
-  padding: 2rem 2rem 2rem;
+  padding: 0rem 0rem 1rem;
   text-align: center;
   color: white;
   font-size: 32px;
@@ -31,13 +35,6 @@ export default () => {
         <Section>
           <Container>
             <SmallHeader>
-              <div style={{ justifyContent: 'center', display: 'flex' }}>
-                <img
-                  alt="FlutterVikings"
-                  className="SceneOverlay-logo"
-                  src="/assets/logo.svg"
-                />
-              </div>
               <h1 className="font__caesar size__h1">Activities & Prizes</h1>
             </SmallHeader>
             <Content>
@@ -53,6 +50,9 @@ export default () => {
                     through the conference lined up:
                   </p>
                   <br />
+
+                  <SmallHeader className="font__caesar size__h1">Contests</SmallHeader>
+
                   <p>
                     <SmallHeader>Logo Contest</SmallHeader>
                   </p>
@@ -61,15 +61,15 @@ export default () => {
                       <td>
                         <p>
                           During the conference: Recreate the Flutter Vikings logo using a
-                          custom painter (or whatever you like). For bonus points, make it
-                          dance! Create your own demo and submit a codepen link to us.
+                          custom painter (or whatever you like). For bonus points, add
+                          some animation. Create your own creative demo and submit a
+                          codepen link to us.
                         </p>
                         <br />
                         <p>
                           Make your codepen here: &nbsp;
                           <SmallLink href="https://codepen.io">Code Pen</SmallLink>
                         </p>
-                        <br />
                         <p>
                           Submit your codepen logo link here with the subject "LOGO
                           CONTEST": &nbsp;
@@ -89,34 +89,36 @@ export default () => {
                   </table>
                   <br />
                   <SmallHeader>Social Media Contests</SmallHeader>
-                  <p>Tweet to win (Be creative with your selfie's and Tweets) </p>
+                  <p>
+                    Take a selfie and tweet it with this to win (Be creative with your
+                    selfie's and Tweets){' '}
+                  </p>
                   <div className="tm-click-to-tweet">
-                    <div className="tm-ctt-text">
+                    <div>
+                      <InlineThing>
+                        <p>
+                          “I'm plundering for Flutter treasures 💙 with the Vikings”
+                          #fluttervikings @fluttervikings
+                        </p>
+                      </InlineThing>
                       <SmallLink
-                        href="https://twitter.com/share?text=My+selfie%2C+with+the+Vikings%E2%80%9D+Flutter+Vikings+%23fluttervikings&amp;url=https://www.fluttervikings.com"
-                        target="_blank"
-                      >
-                        “My selfie, with the vikings” Flutter Vikings #fluttervikings
-                        &nbsp;
-                      </SmallLink>
-                    </div>
-                    <p>
-                      <a
-                        href="https://twitter.com/share?text=My+selfie%2C+with+the+Vikings%E2%80%9D+Flutter+Vikings+%23fluttervikings"
+                        href="https://twitter.com/share?text=Me+with+the+Vikings%E2%80%9D+%23fluttervikings&amp;url=https://www.fluttervikings.com"
                         target="_blank"
                         className="tm-ctt-btn"
                       >
-                        Click To Tweet
-                      </a>
-                    </p>
-                    <div className="tm-ctt-tip" />
-                  </div>
-                  <p>Share on Linkedin (Be creative with your Linkedin Post)</p>
-                  <div className="tm-click-to-tweet">
-                    <div>
-                      “My selfie, with the vikings” #FlutterVikings, Watching the sessions
-                      @fluttervikings &nbsp;
+                        Click To Tweet &nbsp;
+                      </SmallLink>
                     </div>
+                  </div>
+                  <p>
+                    Take a selfie and post it on Linkedin with this text to win (Be
+                    creative with your Linkedin Post)
+                  </p>
+                  <div className="tm-click-to-tweet">
+                    <SmallLink href="https://www.linkedin.com/">
+                      “I'm plundering for Flutter treasures 💙 with the Vikings”
+                      #FlutterVikings &nbsp;
+                    </SmallLink>
 
                     <div className="tm-ctt-tip" />
                   </div>
@@ -130,11 +132,28 @@ export default () => {
                 However, we also have some more concrete incentives lined up... Prizes!!!
               </p>
               <br />
-              <SmallHeader className="font__caesar size__h1">Prizes!</SmallHeader>
+              <br />
+              <div className="live_activities">
+                <p>
+                  <SmallHeader className="font__caesar size__h1">
+                    Live Activities
+                  </SmallHeader>
+                </p>
 
+                <p>
+                  During the conference, there will be a number of different live
+                  activities. Some of these activities involve quizes and contests, for
+                  which you can get prizes. You can see when the different activities are
+                  scheduled here: &nbsp;
+                  <SmallLink href="https://fluttervikings.com/#agenda">Agenda</SmallLink>
+                </p>
+              </div>
+              <br />
+              <br />
+              <SmallHeader className="font__caesar size__h1">Prizes!</SmallHeader>
               <p>
-                So, here is a list of the prizes that will be given out throughout the
-                conference for contest and quiz winners.
+                Here are the prizes that will be given out throughout the conference for
+                the various contest and quiz winners!
               </p>
               <ul>
                 <li>🎫 Udemy voucher 🎫</li>
