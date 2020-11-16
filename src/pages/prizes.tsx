@@ -32,8 +32,8 @@ export default () => {
               <br />
               <p>
                 That's why we have a host of live activities and contests running through
-                the conference lined up. You can read more about them here:{' '}
-                <SmallLink href="/Activities">Activities</SmallLink>{' '}
+                the conference lined up. You can read more about them here:
+                <SmallLink href="/Activities">Activities</SmallLink>
               </p>
               <br />
               <p>
