@@ -23,6 +23,13 @@ const SmallHeader = styled.header`
   font-size: 32px;
 `;
 
+const VerySmallHeader = styled.header`
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+`;
+
 const SmallLink = styled.a`
   color: white;
   font-weight: bold;
@@ -52,7 +59,6 @@ export default () => {
                   <br />
 
                   <SmallHeader className="font__caesar size__h1">Contests</SmallHeader>
-
                   <p>
                     <SmallHeader>Logo Contest</SmallHeader>
                   </p>
@@ -94,22 +100,20 @@ export default () => {
                     selfie's and Tweets){' '}
                   </p>
                   <div className="tm-click-to-tweet">
-                    <div>
-                      <InlineThing>
-                        <p>
-                          “I'm plundering for Flutter treasures 💙 with the Vikings”
-                          #fluttervikings @fluttervikings
-                        </p>
-                      </InlineThing>
-                      <SmallLink
-                        href="https://twitter.com/share?text=Me+with+the+Vikings%E2%80%9D+%23fluttervikings&amp;url=https://www.fluttervikings.com"
-                        target="_blank"
-                        className="tm-ctt-btn"
-                      >
-                        Click To Tweet &nbsp;
-                      </SmallLink>
-                    </div>
+                    <SmallLink
+                      className="tm-ctt-btn"
+                      href="https://twitter.com/share?text=Me+with+the+Vikings%E2%80%9D+%23fluttervikings&amp;url=https://www.fluttervikings.com"
+                      target="_blank"
+                    >
+                      “I'm plundering for Flutter treasures 💙 with the Vikings”
+                      #fluttervikings @fluttervikings
+                    </SmallLink>
                   </div>
+                  <br />
+
+                  <VerySmallHeader>AND / OR </VerySmallHeader>
+
+                  <br />
                   <p>
                     Take a selfie and post it on Linkedin with this text to win (Be
                     creative with your Linkedin Post)
@@ -119,8 +123,6 @@ export default () => {
                       “I'm plundering for Flutter treasures 💙 with the Vikings”
                       #FlutterVikings &nbsp;
                     </SmallLink>
-
-                    <div className="tm-ctt-tip" />
                   </div>
                   <br />
                   <p />
