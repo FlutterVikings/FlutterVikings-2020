@@ -16,6 +16,12 @@ const SmallHeader = styled.header`
   padding: 2rem 2rem 2rem;
   text-align: center;
   color: white;
+  font-size: 32px;
+`;
+
+const SmallLink = styled.a`
+  color: white;
+  font-weight: bold;
 `;
 
 export default () => {
@@ -24,7 +30,7 @@ export default () => {
       <Layout>
         <Section>
           <Container>
-            <Header>
+            <SmallHeader>
               <div style={{ justifyContent: 'center', display: 'flex' }}>
                 <img
                   alt="FlutterVikings"
@@ -33,7 +39,7 @@ export default () => {
                 />
               </div>
               <h1 className="font__caesar size__h1">Activities & Prizes</h1>
-            </Header>
+            </SmallHeader>
             <Content>
               <ActivityRow>
                 <div className="entry-contest">
@@ -44,31 +50,55 @@ export default () => {
                   <br />
                   <p>
                     That's why we have a host of live activities and contests running
-                    through the conference lined up. You can read more about them here:
+                    through the conference lined up:
                   </p>
-                  <br></br> 
+                  <br />
                   <p>
-                    <strong> Contest </strong>
+                    <SmallHeader>Logo Contest</SmallHeader>
                   </p>
-                  <p>
-                    During the conference -&gt; Use the flutter vikings logo and customer
-                    painter. Create your own demo and submit to us -&gt;
-                    <a href="https://codepen.io">Code Pen</a>
-                  </p>
-                  <br></br>
-                  <p>
-                    <strong>Social media</strong>
-                  </p>
+                  <table>
+                    <tr>
+                      <td>
+                        <p>
+                          During the conference: Recreate the Flutter Vikings logo using a
+                          custom painter (or whatever you like). For bonus points, make it
+                          dance! Create your own demo and submit a codepen link to us. ß{' '}
+                        </p>
+                        <br />
+                        <p>
+                          Make your codepen here: &nbsp;{' '}
+                          <SmallLink href="https://codepen.io">Code Pen</SmallLink>{' '}
+                        </p>
+                        <br />
+                        <p>
+                          Submit your codepen logo link here with the subject "LOGO
+                          CONTEST": &nbsp;
+                          <SmallLink href="mailto:team@flutterVikings.com">
+                            team@flutterVikings.com
+                          </SmallLink>
+                        </p>
+                      </td>
+                      <td>
+                        <img
+                          alt="FlutterVikings"
+                          className="SceneOverlay-logo"
+                          src="/assets/logo.svg"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                  <br />
+                  <SmallHeader>Social Media Contests</SmallHeader>
                   <p>Tweet to win (Be creative with your selfie's and Tweets) </p>
                   <div className="tm-click-to-tweet">
                     <div className="tm-ctt-text">
-                      <a
+                      <SmallLink
                         href="https://twitter.com/share?text=My+selfie%2C+with+the+Vikings%E2%80%9D+Flutter+Vikings+%23fluttervikings&amp;url=https://www.fluttervikings.com"
                         target="_blank"
                       >
                         “My selfie, with the vikings” Flutter Vikings #fluttervikings
                         &nbsp;
-                      </a>
+                      </SmallLink>
                     </div>
                     <p>
                       <a
@@ -79,7 +109,7 @@ export default () => {
                         Click To Tweet
                       </a>
                     </p>
-                    <div className="tm-ctt-tip"></div>
+                    <div className="tm-ctt-tip" />
                   </div>
                   <p>Share on Linkedin (Be creative with your Linkedin Post)</p>
                   <div className="tm-click-to-tweet">
@@ -88,13 +118,14 @@ export default () => {
                       @fluttervikings &nbsp;
                     </div>
 
-                    <div className="tm-ctt-tip"></div>
+                    <div className="tm-ctt-tip" />
                   </div>
-                  <br></br>
-                  <p></p>
+                  <br />
+                  <p />
                 </div>
-              </ActivityRow> 
-              <p>🤔 Why should you do participate? Well, we hope that they will be fun and
+              </ActivityRow>
+              <p>
+                🤔 Why should you do participate? Well, we hope that they will be fun and
                 that maybe you will learn something new about Flutter while participating.
                 However, we also have some more concrete incentives lined up... Prizes!!!
               </p>
