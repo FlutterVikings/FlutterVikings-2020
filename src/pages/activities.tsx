@@ -62,12 +62,12 @@ export default () => {
                         <p>
                           During the conference: Recreate the Flutter Vikings logo using a
                           custom painter (or whatever you like). For bonus points, make it
-                          dance! Create your own demo and submit a codepen link to us. ß{' '}
+                          dance! Create your own demo and submit a codepen link to us.
                         </p>
                         <br />
                         <p>
-                          Make your codepen here: &nbsp;{' '}
-                          <SmallLink href="https://codepen.io">Code Pen</SmallLink>{' '}
+                          Make your codepen here: &nbsp;
+                          <SmallLink href="https://codepen.io">Code Pen</SmallLink>
                         </p>
                         <br />
                         <p>
