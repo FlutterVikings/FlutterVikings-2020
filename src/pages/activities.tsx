@@ -11,6 +11,13 @@ const ActivityRow = styled.div`
   display: flex;
 `;
 
+const SmallHeader = styled.header`
+  position: relative;
+  padding: 2rem 2rem 2rem;
+  text-align: center;
+  color: white;
+`;
+
 export default () => {
   return (
     <>
@@ -25,14 +32,21 @@ export default () => {
                   src="/assets/logo.svg"
                 />
               </div>
-              <h1 className="font__caesar size__h1">Activities</h1>
+              <h1 className="font__caesar size__h1">Activities & Prizes</h1>
             </Header>
             <Content>
               <ActivityRow>
-                <br></br>
                 <div className="entry-contest">
-                  <p>Participate in these activities to win prizes</p>
-                  <br></br>
+                  <p>
+                    As an online conference, we know that it's important to go the extra
+                    mile to keep our attendees interested and engaged.
+                  </p>
+                  <br />
+                  <p>
+                    That's why we have a host of live activities and contests running
+                    through the conference lined up. You can read more about them here:
+                  </p>
+                  <br></br> 
                   <p>
                     <strong> Contest </strong>
                   </p>
@@ -79,8 +93,29 @@ export default () => {
                   <br></br>
                   <p></p>
                 </div>
-              </ActivityRow>
+              </ActivityRow> 
+              <p>🤔 Why should you do participate? Well, we hope that they will be fun and
+                that maybe you will learn something new about Flutter while participating.
+                However, we also have some more concrete incentives lined up... Prizes!!!
+              </p>
+              <br />
+              <SmallHeader className="font__caesar size__h1">Prizes!</SmallHeader>
 
+              <p>
+                So, here is a list of the prizes that will be given out throughout the
+                conference for contest and quiz winners.
+              </p>
+              <ul>
+                <li>🎫 Udemy voucher 🎫</li>
+                <li>🎫 Codemagic Voucher for $2000 USD 🎫</li>
+                <li>🎫 AppCircle Voucher + FREE account 🎫</li>
+                <li>💰 2500 Euro by The@Company (distributed to multiple winners) 💰</li>
+                <li>🧸 Dash the bird (10) 🧸</li>
+                <li>👕 T-Shirt (FlutterVikings/Community/Flutter) 👕</li>
+                <li>📚 Flutter full reference book (Ebook and paper copy) 📚</li>
+                <li>📚 Flutter in Action Ebook and voucher for paper copy 📚</li>
+                <li>✨ Stream contest prize (cash + swag) ✨</li>
+              </ul>
               <br />
               <br />
               <div className="CTA-actions" style={{ textAlign: 'center' }}>
