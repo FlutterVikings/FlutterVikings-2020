@@ -87,15 +87,15 @@
   {
     "id": "danielle_cox",
     "name": "Danielle Cox",
-    "title": "",
-    "company": "",
+    "title": "Software Engineer",
+    "company": "flutterista",
     "social": {
-      "twitter": "",
+      "twitter": "https://twitter.com/imafiguresk8r",
       "github": "",
       "linkedin": ""
     },
     "talk": {
-      "title": "TBA",
+      "title": "The importance of diversity",
       "description": "TBA",
       "lightening": false
     },
@@ -104,19 +104,19 @@
   {
     "id": "simon_lightfoot",
     "name": "Simon Lightfoot",
-    "title": "",
-    "company": "",
+    "title": "FlutterWhisperer",
+    "company": "FlutterLondon",
     "social": {
-      "twitter": "",
+      "twitter": "https://twitter.com/devangelslondon",
       "github": "",
       "linkedin": ""
     },
     "talk": {
-      "title": "TBA",
-      "description": "",
+      "title": "State Restoration",
+      "description": "Simon explains the new State Restoration API. Why its required.. How it works and more importantly how you can use it to allow your application to have its state long-lived after the application is closed or killed by the Operating System.",
       "lightening": false
     },
-    "bio": ""
+    "bio": "Simon loves Flutter and believes its the future of Mobile development. Co-founder Flutter Study Group on Slack, HumpdayQandA and Flutter Community Lead. He's been writing code for 18+ years, of which the last 10 years has been professional Android development. He discovered Flutter in Oct 2017 and since then has not looked back."
   },
 
   {
