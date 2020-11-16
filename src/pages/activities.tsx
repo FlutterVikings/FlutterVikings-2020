@@ -19,14 +19,12 @@ const SmallHeader = styled.header`
   position: relative;
   padding: 0rem 0rem 1rem;
   text-align: center;
-  color: white;
   font-size: 32px;
 `;
 
 const VerySmallHeader = styled.header`
   position: relative;
   text-align: center;
-  color: white;
   font-size: 18px;
 `;
 
@@ -41,10 +39,10 @@ export default () => {
       <Layout>
         <Section>
           <Container>
-            <SmallHeader>
-              <h1 className="font__caesar size__h1">Activities & Prizes</h1>
-            </SmallHeader>
             <Content>
+              <SmallHeader>
+                <h1 className="font__caesar size__h1">Activities & Prizes</h1>
+              </SmallHeader>
               <ActivityRow>
                 <div className="entry-contest">
                   <p>
