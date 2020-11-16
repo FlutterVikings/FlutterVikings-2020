@@ -96,6 +96,11 @@ const Nav = () => {
                           <Link to={''} onClick={closeNav}>
                             Homepage
                           </Link>
+                          <li className="NavContent-item">
+                            <Link to={'activities'} onClick={closeNav}>
+                              Activities and Prizes
+                            </Link>
+                          </li>
                         </li>
                         {/* <li className="NavContent-item">
                           <a href="#">Speakers</a>
@@ -104,7 +109,7 @@ const Nav = () => {
                           <a href="#">Agenda</a>
                         </li> */}
                         <li className="NavContent-item">
-                          <Link to={'code-of-conduct'} onClick={closeNav}>
+                          <Link to={'code-of-conduct/'} onClick={closeNav}>
                             Code of Conduct
                           </Link>
                         </li>
