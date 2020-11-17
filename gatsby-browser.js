@@ -1,5 +1,5 @@
 function invokeServiceWorkerUpdateFlow() {
-  const confirmed = confirm('New version of the app is available. Refresh now');
+  const confirmed = window.confirm('New version of the app is available. Refresh now');
   if (confirmed) {
     window.location.reload();
   }
