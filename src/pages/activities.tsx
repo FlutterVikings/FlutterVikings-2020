@@ -149,7 +149,13 @@ export default () => {
                     Users are required to scan or enter their ticket ID to unlock the
                     codelab experience.{' '}
                   </p>
-                  <p>Codelab URL: https://bit.ly/flutter-vikings-codelab. </p>
+                  <p>
+                    Codelab URL:{' '}
+                    <SmallLink href="https://bit.ly/flutter-vikings-codelab">
+                      {' '}
+                      https://bit.ly/flutter-vikings-codelab.
+                    </SmallLink>{' '}
+                  </p>
                   <br />
                   <strong>Activity</strong>
                   <p>
