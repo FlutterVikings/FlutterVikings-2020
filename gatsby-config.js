@@ -31,18 +31,10 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sitemap',
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: config.headerFontFamily,
-            variants: [`400`],
-          },
-          {
-            family: config.bodyFontFamily,
-            variants: [`400`, `700`],
-          },
-        ],
+        fonts: [`${config.headerFontFamily}:400`, `${config.bodyFontFamily}:400,700`],
+        display: 'swap',
       },
     },
     {
