@@ -218,6 +218,7 @@ const Schedules = () => {
                 Twitter
               </a>
             </p>
+            <br />
             <p>
               Your time now is <b>{now.format('nice')}</b>
             </p>

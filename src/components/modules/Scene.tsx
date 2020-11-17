@@ -49,24 +49,27 @@ const Scene = () => {
           <p className="SceneOverlay-date">17-19 November, 2020</p>
           <p className="SceneOverlay-location">3 Days Online</p>
           <p className="SceneOverlay-location">
-            Watch us on <br />
+            Watch us on: <br />
             <a
+              className="Btn Btn--cfp Btn--cta"
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.youtube.com/playlist?list=PL4dBIh1xps-EXi7ZuOVRAg2MFDvjxQpR3"
             >
               Youtube
             </a>{' '}
-            or{' '}
+            or
             <a
+              className="Btn Btn--cfp Btn--cta"
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.twitch.tv/FlutterCommunity"
             >
               Twitch
             </a>{' '}
-            or{' '}
+            or
             <a
+              className="Btn Btn--cfp Btn--cta"
               target="_blank"
               rel="noopener noreferrer"
               href="https://twitter.com/flutterVikings"
@@ -86,7 +89,7 @@ const Scene = () => {
           </a>
 
           <ScrollIntoView selector="#agenda">
-            <button className="Btn Btn--cfp Btn--cta">Program/Agenda</button>
+            <button className="Btn Btn--ticket Btn--cta">Program/Agenda</button>
           </ScrollIntoView>
         </div>
       </div>
