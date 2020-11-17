@@ -118,7 +118,6 @@
     },
     "bio": "Simon loves Flutter and believes its the future of Mobile development. Co-founder Flutter Study Group on Slack, HumpdayQandA and Flutter Community Lead. He's been writing code for 18+ years, of which the last 10 years has been professional Android development. He discovered Flutter in Oct 2017 and since then has not looked back."
   },
-
   {
     "id": "mais_alheraki",
     "name": "Mais Alheraki",
@@ -374,5 +373,22 @@
       "lightening": false
     },
     "bio": "Salih is a Berlin based Android Engineer who is a Google Developer Expert for Flutter and Dart. He likes sharing his knowledge with the people by mentoring aspiring developers, blogging and talking at conferences."
+  },
+  {
+    "id": "kevin_suhajda",
+    "name": "Kevin Suhajda",
+    "title": "Dev rel",
+    "company": "CodeMagic",
+    "social": {
+      "twitter": "",
+      "github": "",
+      "linkedin": ""
+    },
+    "talk": {
+      "title": "Flutter Productivity Tips with CI/CD",
+      "description": "During our scheduled activity let's take a look at some productivity tips when working with configuration as code in .yaml files so you can reduce boilerplate and make the code more readable and reusable. Kevin Suhajda is our engineer that works closely with customers and sees a lot of complicated pipelines that he has learned to help optimise.",
+      "lightening": true
+    },
+    "bio": "Kevin helps people discover the benefit of using Codemagic CI/CD for testing, building and distributing their mobile apps. He has worked as a sales engineer and mobile application developer and loves to find out how things work and solving technical problems. In his spare time he likes playing guitar and hiking."
   }
 ]

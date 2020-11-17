@@ -200,6 +200,26 @@ export default () => {
                   </p>
                   <br />
                   <br />
+                  <br />
+                  <SmallHeader>CodeMagic Quiz</SmallHeader>
+                  <p>
+                    In addition to giving an informative talk about CI/CD, our sponsor
+                    CodeMagic has created a personality test type quiz for developers
+                    using Flutter Web. In order to enter the prize draw for the credits,
+                    please{' '}
+                    <SmallLink href="https://developertest.codemagic.app/#/">
+                      complete the quiz here{' '}
+                    </SmallLink>{' '}
+                    and tweet the results to @codemagicio with #fluttervikings.
+                  </p>
+                  <br />
+                  <p>
+                    <strong>Prize:</strong>&nbsp;They will give $100 credit for CodeMagic
+                    to the first 20 people who win (We don't know how you win a
+                    personality quiz either. It will be interesting to find out!)
+                  </p>
+                  <br />
+                  <br />
                   <p>
                     <SmallHeader>Logo Contest</SmallHeader>
                   </p>
@@ -350,20 +370,6 @@ export default () => {
                 <p>
                   <strong>Prize:</strong>&nbsp;TBA
                 </p>
-                <br />
-                <br />
-                <SmallHeader>CodeMagic Quiz</SmallHeader>
-                <p>
-                  CodeMagic will host a personality test type quiz. This will be the first
-                  Activitiy on November 19th (Day 3) 4:15 - 4:30 pm CET{' '}
-                </p>
-                <br />
-                <p>
-                  <strong>Prize:</strong>&nbsp;They will give $100 credit for CodeMagic to
-                  the first 20 people who win (We don't know how you win a personality
-                  quiz either. It will be interesting to find out!)
-                </p>
-                <br />
                 <br />
               </div>
               <br />
