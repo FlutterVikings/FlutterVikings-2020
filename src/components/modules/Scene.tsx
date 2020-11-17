@@ -49,7 +49,7 @@ const Scene = () => {
           <p className="SceneOverlay-date">17-19 November, 2020</p>
           <p className="SceneOverlay-location">3 Days Online</p>
           <p className="SceneOverlay-location">
-            Watch us on{' '}
+            Watch us on <br />
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -57,7 +57,7 @@ const Scene = () => {
             >
               Youtube
             </a>{' '}
-            or
+            or{' '}
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -65,7 +65,7 @@ const Scene = () => {
             >
               Twitch
             </a>{' '}
-            or
+            or{' '}
             <a
               target="_blank"
               rel="noopener noreferrer"
