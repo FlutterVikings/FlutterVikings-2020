@@ -190,6 +190,34 @@ const Schedules = () => {
         <Container id="agenda">
           <MainTitle title="Event Agenda" titleStrokeText={'Schedule'} />
           <Notice>
+            <p className="SceneOverlay-location">
+              <a
+                className="Btn Btn--ticket Btn--cta"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.youtube.com/playlist?list=PL4dBIh1xps-EXi7ZuOVRAg2MFDvjxQpR3"
+              >
+                Youtube
+              </a>{' '}
+              or
+              <a
+                className="Btn Btn--ticket Btn--cta"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.twitch.tv/FlutterCommunity"
+              >
+                Twitch
+              </a>{' '}
+              or
+              <a
+                className="Btn Btn--ticket Btn--cta"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/flutterVikings"
+              >
+                Twitter
+              </a>
+            </p>
             <p>
               Your time now is <b>{now.format('nice')}</b>
             </p>
