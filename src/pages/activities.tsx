@@ -11,18 +11,11 @@ const ActivityRow = styled.div`
   display: flex;
 `;
 
-const InlineThing = styled.div`
-  display: inline-block;
-`;
-
 const SimpleClickToTweet = styled.div`
   display: block;
-  margin: 0;
-  padding: 0;
   position: relative;
   border-style: solid;
   border: 1px solid #dddddd;
-  -moz-border-radius: 4px;
   border-radius: 4px;
   padding: 15px 30px;
   margin: 15px 0px;
@@ -38,7 +31,6 @@ const TwitterLogoLink = styled.a`
   font-weight: bold;
   line-height: 100%;
   color: #ffffff;
-  float: center;
   padding-right: 24px;
   text-decoration: none;
   background: transparent url(/assets/Twitter_Social_Icon_Circle_Color.svg) no-repeat

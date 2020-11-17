@@ -50,12 +50,29 @@ const Scene = () => {
           <p className="SceneOverlay-location">3 Days Online</p>
           <p className="SceneOverlay-location">
             Watch us on{' '}
-            <a href="https://www.youtube.com/playlist?list=PL4dBIh1xps-EXi7ZuOVRAg2MFDvjxQpR3">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.youtube.com/playlist?list=PL4dBIh1xps-EXi7ZuOVRAg2MFDvjxQpR3"
+            >
               Youtube
             </a>{' '}
             or
-            <a href="https://www.twitch.tv/FlutterCommunity">Twitch</a> or
-            <a href="https://twitter.com/flutterVikings">Twitter</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.twitch.tv/FlutterCommunity"
+            >
+              Twitch
+            </a>{' '}
+            or
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/flutterVikings"
+            >
+              Twitter
+            </a>
           </p>
         </div>
         <div className="CTA-actions" style={{ display: 'flex' }}>
