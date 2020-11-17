@@ -162,7 +162,7 @@ export default () => {
                   </table>
                   <br />
                   <p>
-                    <strong>Prize:</strong>&nbsp;For the 10 best logos:{' '}
+                    <strong>Prize:</strong>&nbsp;For the 3 best logos:{' '}
                     <strong>Dash!</strong>
                   </p>
                   <br />
