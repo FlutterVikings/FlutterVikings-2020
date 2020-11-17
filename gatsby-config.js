@@ -18,13 +18,14 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-remove-console',
     'gatsby-plugin-styled-components',
-    {
-      resolve: 'gatsby-plugin-offline',
-      options: {
-        skipWaiting: true,
-        clientsClaim: true,
-      },
-    },
+    'gatsby-plugin-remove-serviceworker',
+    // {
+    //   resolve: 'gatsby-plugin-offline',
+    //   options: {
+    //     skipWaiting: true,
+    //     clientsClaim: true,
+    //   },
+    // },
     'gatsby-plugin-typescript',
     'gatsby-plugin-sass',
     'gatsby-plugin-manifest',
