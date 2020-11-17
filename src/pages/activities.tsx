@@ -74,7 +74,9 @@ export default () => {
                     conference lined up.
                   </p>
                   <br />
-                  <SmallHeader className="font__caesar size__h1">Prizes!</SmallHeader>
+                  <SmallHeader className="font__caesar size__h1">
+                    Prizes and Gifts!
+                  </SmallHeader>
                   <p>
                     Why should you participate 🤔 ? Well, we hope that they will be fun
                     and that maybe you will learn something new about Flutter while
@@ -101,6 +103,11 @@ export default () => {
                     <li>✨ Stream contest prize (cash + swag) ✨</li>
                   </ul>
                   <br />
+                  <p>
+                    Some of our sponsors are also giving <strong>gifts</strong> to all
+                    attendees! These are discount codes. So, attendees with tickets will
+                    get these later in an email.
+                  </p>
                   <br />
                   <br />
                   <SmallHeader className="font__caesar size__h1">
@@ -125,7 +132,68 @@ export default () => {
                   <br />
                   <br />
                   <br />
-
+                  <br />
+                  <p>
+                    <SmallHeader>Stream Contest</SmallHeader>
+                  </p>
+                  <p>
+                    <strong>Codelab</strong>
+                  </p>
+                  <p>
+                    The codelab is built to help users become familiar with our Flutter
+                    chat SDK. It requires basic knowledge of Flutter and no prior
+                    knowledge of Stream. The tutorial is short and only takes ~15 minutes
+                    to complete.{' '}
+                  </p>
+                  <p>
+                    Users are required to scan or enter their ticket ID to unlock the
+                    codelab experience.{' '}
+                  </p>
+                  <p>Codelab URL: https://bit.ly/flutter-vikings-codelab. </p>
+                  <br />
+                  <strong>Activity</strong>
+                  <p>
+                    Build Viking is a week-long Flutter hackathon which gives developers
+                    the freedom to create whatever their heart desires. It is an
+                    opportunity for developers to showcase their creativity by building
+                    innovative apps, websites, or desktop applications in Flutter.
+                  </p>
+                  <p>
+                    Developers are free to use 3rd party services such as Rive, Firebase,
+                    or any package to design and build their applications.
+                  </p>
+                  <p>
+                    Note, participants are *not* required to use Stream for this activity.
+                  </p>
+                  <p>
+                    Submissions for build Vikings close on midnight Sunday, 22nd November
+                    2020 UTC. The form for submissions can be found here.
+                  </p>
+                  <p>
+                    Activity URL:{' '}
+                    <SmallLink href="https://getstream.io/blog/stream-loves-flutter-vikings/">
+                      Stream loves Flutter Vikings
+                    </SmallLink>
+                  </p>
+                  <p>
+                    Activity Submission form:{' '}
+                    <SmallLink href="https://bit.ly/stream-build-viking">
+                      Submit here
+                    </SmallLink>
+                  </p>
+                  <br />
+                  <strong>Prizes: </strong>{' '}
+                  <p>
+                    There are two prizes that will be given to the top two winners of the
+                    Flutter app contest. The first place winner will get E-Gift card and
+                    Stream swag. The second place winnter will get Stream swag.{' '}
+                  </p>
+                  <p>
+                    They will also give Stream Swag and will be given to a random
+                    participant who completes the Stream codelab.{' '}
+                  </p>
+                  <br />
+                  <br />
                   <p>
                     <SmallHeader>Logo Contest</SmallHeader>
                   </p>
@@ -163,7 +231,11 @@ export default () => {
                   <br />
                   <p>
                     <strong>Prize:</strong>&nbsp;For the 3 best logos:{' '}
-                    <strong>Dash!</strong>
+                    <strong>Dash!</strong> &nbsp; For the next 7 best logos:{' '}
+                    <SmallLink href="https://fluttercompletereference.com/">
+                      The Complete Flutter Reference
+                    </SmallLink>{' '}
+                    as an e-book
                   </p>
                   <br />
                   <br />
@@ -188,11 +260,8 @@ export default () => {
                       &nbsp;
                     </TwitterLogoLink>
                   </SimpleClickToTweet>
-
                   <br />
-
                   <VerySmallHeader>AND / OR </VerySmallHeader>
-
                   <br />
                   <p>
                     Take a selfie and post it on Linkedin with this text to win (Be
@@ -237,17 +306,24 @@ export default () => {
                 </p>
                 <br />
                 <p>
-                  <strong>Prize:</strong>&nbsp;TBA
+                  <strong>Prizes:</strong>
                 </p>
+                <p>Grand prize winner: 1-year free Appcircle Professional Package</p>
+                <p>2nd place: 1-year free Appcircle Developer Package</p>
+                <p>3rd-5th place: 3-month free Appcircle Developer Package</p>
+
                 <br />
                 <br />
                 <SmallHeader>Flutter Complete Reference Quiz</SmallHeader>
                 <p>
-                  Alberto Miola, the author of the "Flutter Complete Reference" book, will
-                  host a quiz. He made custom flutter web app just for this activity! Link
-                  to it will be provided at the start of the quiz. To participate, you
-                  will need to enter your ticket number. This will be the first Activitiy
-                  on November 18th (Day 2) 4:15 - 4:30 pm CET{' '}
+                  Alberto Miola, the author of the{' '}
+                  <SmallLink href="https://fluttercompletereference.com/">
+                    The Complete Flutter Reference
+                  </SmallLink>{' '}
+                  book, will host a quiz. He made custom flutter web app just for this
+                  activity! Link to it will be provided at the start of the quiz. To
+                  participate, you will need to enter your ticket number. This will be the
+                  first Activitiy on November 18th (Day 2) 4:15 - 4:30 pm CET{' '}
                 </p>
                 <br />
                 <p>
