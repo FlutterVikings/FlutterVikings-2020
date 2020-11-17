@@ -48,6 +48,15 @@ const Scene = () => {
         <div className="SceneOverlay-info">
           <p className="SceneOverlay-date">17-19 November, 2020</p>
           <p className="SceneOverlay-location">3 Days Online</p>
+          <p className="SceneOverlay-location">
+            Watch us on{' '}
+            <a href="https://www.youtube.com/playlist?list=PL4dBIh1xps-EXi7ZuOVRAg2MFDvjxQpR3">
+              Youtube
+            </a>{' '}
+            or
+            <a href="https://www.twitch.tv/FlutterCommunity">Twitch</a> or
+            <a href="https://twitter.com/flutterVikings">Twitter</a>
+          </p>
         </div>
         <div className="CTA-actions" style={{ display: 'flex' }}>
           <a
