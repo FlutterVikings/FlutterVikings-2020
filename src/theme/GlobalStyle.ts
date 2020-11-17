@@ -9,6 +9,9 @@ const GlobalStyle = createGlobalStyle`
   }
    @keyframes fadein { 0% { opacity: 0 }}
   
+  a {
+    color: ${(props) => props.theme.colors.logoLightBlue}
+  }
 
 `;
 
