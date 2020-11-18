@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import ScrollIntoView from 'react-scroll-into-view';
 import config from '../../config';
@@ -44,10 +45,10 @@ const Scene = () => {
         <h1 className="font__caesar size__h1">Flutter Vikings</h1>
         <p className="SceneOverlay-slogan">
           The biggest <span className="font__caesar">Nordic</span> Flutter Conference!
-        </p>
-        <div className="SceneOverlay-info">
           <p className="SceneOverlay-date">17-19 November, 2020</p>
           <p className="SceneOverlay-location">3 Days Online</p>
+        </p>
+        <div className="SceneOverlay-info">
           <p className="SceneOverlay-location">
             Watch us on: <br />
             <a
@@ -58,7 +59,7 @@ const Scene = () => {
             >
               Youtube
             </a>{' '}
-            or
+            or{' '}
             <a
               className="Btn Btn--cfp Btn--cta"
               target="_blank"
@@ -67,7 +68,7 @@ const Scene = () => {
             >
               Twitch
             </a>{' '}
-            or
+            or{' '}
             <a
               className="Btn Btn--cfp Btn--cta"
               target="_blank"
@@ -79,18 +80,24 @@ const Scene = () => {
           </p>
         </div>
         <div className="CTA-actions" style={{ display: 'flex' }}>
+          <Link className="Btn Btn--ticket Btn--cta" to={'/activities'}>
+            Activities
+          </Link>
+
+          <ScrollIntoView selector="#agenda">
+            <button className="Btn Btn--ticket Btn--cta">Agenda</button>
+          </ScrollIntoView>
+        </div>
+        <br />
+        <div className="CTA-actions" style={{ display: 'flex' }}>
           <a
-            className="Btn Btn--ticket Btn--cta"
+            className="Btn Btn--cfp Btn--cta"
             target="_blank"
             rel="noopener noreferrer"
             href={config.ticketUrl}
           >
             Get your FREE ticket
           </a>
-
-          <ScrollIntoView selector="#agenda">
-            <button className="Btn Btn--ticket Btn--cta">Program/Agenda</button>
-          </ScrollIntoView>
         </div>
       </div>
     </section>
