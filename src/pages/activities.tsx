@@ -1,11 +1,11 @@
 import { graphql, Link } from 'gatsby';
-import GatsbyImage, { FluidObject } from 'gatsby-image';
 import React, { useState } from 'react';
 import { Container } from 'styled-bootstrap-grid';
 import styled from 'styled-components';
 import { Layout, Section, Header, Content } from '../components';
 // @ts-ignore
 import TimezoneSelect from 'react-timezone-select';
+import { SEO } from '../components/base/SEO';
 
 const ActivityRow = styled.div`
   display: flex;
@@ -50,15 +50,11 @@ const VerySmallHeader = styled.header`
   font-size: 18px;
 `;
 
-const SmallLink = styled.a`
-  color: #bbb;
-  font-weight: bold;
-`;
-
 export default () => {
   return (
     <>
       <Layout>
+        <SEO title="FlutterVikings activities - Win a Dash or other prizes" />
         <Section>
           <Container>
             <Content>
@@ -101,6 +97,7 @@ export default () => {
                     </li>
                     <li>📚 "Flutter in Action" Ebook (voucher from Manning) 📚</li>
                     <li>✨ Stream contest prize (cash + swag) ✨</li>
+                    <li>✨ Donation to charity on behalf of you (up to USD 20) ✨</li>
                   </ul>
                   <br />
                   <p>
@@ -125,10 +122,17 @@ export default () => {
                     <strong>Prize:</strong>&nbsp;Winners of the challenge will receive{' '}
                     <strong>500 Euro</strong>!!! They will select up to five winning apps.
                   </p>
+                  <p>
+                    The top one will also receive a <strong>Dash!</strong>
+                  </p>
                   <br />
-                  <SmallLink href="https://atsign.com/flutter-vikings/">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    href="https://atsign.com/flutter-vikings/"
+                  >
                     Read more about the details here
-                  </SmallLink>
+                  </a>
                   <br />
                   <br />
                   <br />
@@ -151,10 +155,13 @@ export default () => {
                   </p>
                   <p>
                     Codelab URL:{' '}
-                    <SmallLink href="https://bit.ly/flutter-vikings-codelab">
-                      {' '}
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      href="https://bit.ly/flutter-vikings-codelab"
+                    >
                       https://bit.ly/flutter-vikings-codelab.
-                    </SmallLink>{' '}
+                    </a>{' '}
                   </p>
                   <br />
                   <strong>Activity</strong>
@@ -177,15 +184,23 @@ export default () => {
                   </p>
                   <p>
                     Activity URL:{' '}
-                    <SmallLink href="https://getstream.io/blog/stream-loves-flutter-vikings/">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      href="https://getstream.io/blog/stream-loves-flutter-vikings/"
+                    >
                       Stream loves Flutter Vikings
-                    </SmallLink>
+                    </a>
                   </p>
                   <p>
                     Activity Submission form:{' '}
-                    <SmallLink href="https://bit.ly/stream-build-viking">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      href="https://bit.ly/stream-build-viking"
+                    >
                       Submit here
-                    </SmallLink>
+                    </a>
                   </p>
                   <br />
                   <strong>Prizes: </strong>{' '}
@@ -195,28 +210,75 @@ export default () => {
                     Stream swag. The second place winnter will get Stream swag.{' '}
                   </p>
                   <p>
+                    The top one will also receive a <strong>Dash!</strong>
+                  </p>
+                  <br />
+                  <p>
                     They will also give Stream Swag and will be given to a random
                     participant who completes the Stream codelab.{' '}
                   </p>
                   <br />
                   <br />
-                  <br />
-                  <SmallHeader>CodeMagic Quiz</SmallHeader>
                   <p>
-                    In addition to giving an informative talk about CI/CD, our sponsor
-                    CodeMagic has created a personality test type quiz for developers
-                    using Flutter Web. In order to enter the prize draw for the credits,
-                    please{' '}
-                    <SmallLink href="https://developertest.codemagic.app/#/">
-                      complete the quiz here{' '}
-                    </SmallLink>{' '}
-                    and tweet the results to @codemagicio with #fluttervikings.
+                    <SmallHeader>Flutter on Azure challenge from Microsoft!</SmallHeader>
+                    Deploy any Flutter Web app on Azure Static Web Apps to get a Builder
+                    digital badge of the Azure Heroes program.
                   </p>
-                  <br />
                   <p>
-                    <strong>Prize:</strong>&nbsp;They will give $100 credit for CodeMagic
-                    to the first 20 people who win (We don't know how you win a
-                    personality quiz either. It will be interesting to find out!)
+                    <ul>
+                      <li>
+                        <a
+                          rel="noopener noreferrer nofollow"
+                          target="_blank"
+                          href="https://docs.microsoft.com/en-us/azure/static-web-apps/overview?ocid=aid3025685_ThankYou_DevComm&eventId=FlutterVikings2020_Asz0HYD4Quvj"
+                        >
+                          Learn about Azure Static Web Apps
+                        </a>{' '}
+                        and start creating your resource (5 min). Feel free to{' '}
+                        <a
+                          rel="noopener noreferrer nofollow"
+                          target="_blank"
+                          href="https://github.com/mhadaily/azure-flutter-web-demo?ocid=aid3025685_ThankYou_DevComm&eventId=FlutterVikings2020_Asz0HYD4Quvj"
+                        >
+                          fork a demo repo by Majid
+                        </a>{' '}
+                        to use it as a sample app.
+                      </li>{' '}
+                      <li>
+                        <a
+                          rel="noopener noreferrer nofollow"
+                          target="_blank"
+                          href="https://docs.microsoft.com/en-us/azure/static-web-apps/front-end-frameworks?ocid=aid3025685_ThankYou_DevComm&eventId=FlutterVikings2020_Asz0HYD4Quvj"
+                        >
+                          Configure the resource to support Flutter Web (5 min)
+                        </a>
+                      </li>
+                      <li>
+                        Tweet the result using #flutterwebazure hashtag and get your badge
+                        or send us an email{' '}
+                        <a
+                          rel="noopener noreferrer nofollow"
+                          target="_blank"
+                          href="mailto:team@flutterVikings.com"
+                        >
+                          team@flutterVikings.com
+                        </a>
+                      </li>
+                      <li>
+                        Questions? Ask{' '}
+                        <a
+                          rel="noopener noreferrer nofollow"
+                          target="_blank"
+                          href="mailto:maxim.salnikov@microsoft.com"
+                        >
+                          maxim.salnikov@microsoft.com
+                        </a>
+                      </li>
+                    </ul>
+                    <strong>Prizes: </strong>{' '}
+                    <p>
+                      The top one will also receive a <strong>Dash!</strong>
+                    </p>
                   </p>
                   <br />
                   <br />
@@ -235,14 +297,24 @@ export default () => {
                         <br />
                         <p>
                           Make your codepen here: &nbsp;
-                          <SmallLink href="https://codepen.io">Code Pen</SmallLink>
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            href="https://codepen.io"
+                          >
+                            Code Pen
+                          </a>
                         </p>
                         <p>
                           Submit your codepen logo link here with the subject "LOGO
                           CONTEST": &nbsp;
-                          <SmallLink href="mailto:team@flutterVikings.com">
+                          <a
+                            rel="noopener noreferrer nofollow"
+                            target="_blank"
+                            href="team@flutterVikings.com"
+                          >
                             team@flutterVikings.com
-                          </SmallLink>
+                          </a>
                         </p>
                       </td>
                       <td>
@@ -256,11 +328,16 @@ export default () => {
                   </table>
                   <br />
                   <p>
-                    <strong>Prize:</strong>&nbsp;For the 3 best logos:{' '}
-                    <strong>Dash!</strong> &nbsp; For the next 7 best logos:{' '}
-                    <SmallLink href="https://fluttercompletereference.com/">
+                    <strong>Prize:</strong>&nbsp;For the 3 best logos:
+                    <strong>Dash!</strong> <br />
+                    For the next 7 best logos:{' '}
+                    <a
+                      rel="noopener noreferrer nofollow"
+                      target="_blank"
+                      href="https://fluttercompletereference.com/"
+                    >
                       The Complete Flutter Reference
-                    </SmallLink>{' '}
+                    </a>{' '}
                     as an e-book
                   </p>
                   <br />
@@ -271,14 +348,15 @@ export default () => {
                     selfie's and Tweets){' '}
                   </p>
                   <SimpleClickToTweet>
-                    <SmallLink
+                    <a
+                      rel="noopener noreferrer nofollow"
                       className="tm-ctt-btn"
                       href="https://twitter.com/share?text=Me+with+the+Vikings%E2%80%9D+%23fluttervikings&amp;url=https://www.fluttervikings.com"
                       target="_blank"
                     >
                       “I'm plundering for Flutter treasures 💙 with the Vikings”
                       #fluttervikings @fluttervikings
-                    </SmallLink>
+                    </a>
                     <TwitterLogoLink
                       href="https://twitter.com/share?text=Me+with+the+Vikings%E2%80%9D+%23fluttervikings&amp;url=https://www.fluttervikings.com"
                       target="_blank"
@@ -294,10 +372,14 @@ export default () => {
                     creative with your Linkedin Post)
                   </p>
                   <div className="tm-click-to-tweet">
-                    <SmallLink href="https://www.linkedin.com/">
+                    <a
+                      rel="noopener noreferrer nofollow"
+                      target="_blank"
+                      href="https://www.linkedin.com/"
+                    >
                       “I'm plundering for Flutter treasures 💙 with the Vikings”
                       #FlutterVikings &nbsp;
-                    </SmallLink>
+                    </a>
                   </div>
                   <br />
                   <p>
@@ -322,7 +404,7 @@ export default () => {
                   activities. Some of these activities involve quizes and contests, for
                   which you can get prizes. You can see when the different activities are
                   scheduled here: &nbsp;
-                  <SmallLink href="https://fluttervikings.com/#agenda">Agenda</SmallLink>
+                  <a href="https://fluttervikings.com/#agenda">Agenda</a>
                 </p>
                 <br />
                 <SmallHeader>AppCircle Quiz</SmallHeader>
@@ -343,9 +425,13 @@ export default () => {
                 <SmallHeader>Flutter Complete Reference Quiz</SmallHeader>
                 <p>
                   Alberto Miola, the author of the{' '}
-                  <SmallLink href="https://fluttercompletereference.com/">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    href="https://fluttercompletereference.com"
+                  >
                     The Complete Flutter Reference
-                  </SmallLink>{' '}
+                  </a>{' '}
                   book, will host a quiz. He made custom flutter web app just for this
                   activity! Link to it will be provided at the start of the quiz. To
                   participate, you will need to enter your ticket number. This will be the
@@ -368,9 +454,32 @@ export default () => {
                 </p>
                 <br />
                 <p>
-                  <strong>Prize:</strong>&nbsp;TBA
+                  <strong>Prize:</strong> 5 x USD$20 donation to
+                  https://www.charitywater.org/donate on behalf of the winners! You are
+                  awesome, you help people have pure water! you save people's life.
                 </p>
                 <br />
+                <br />
+                <SmallHeader>CodeMagic Quiz</SmallHeader>
+                <p>
+                  In addition to giving an informative talk about CI/CD, our sponsor
+                  CodeMagic has created a personality test type quiz for developers using
+                  Flutter Web. In order to enter the prize draw for the credits, please{' '}
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    href="https://developertest.codemagic.app/#/"
+                  >
+                    complete the quiz here{' '}
+                  </a>{' '}
+                  and tweet the results to @codemagicio with #fluttervikings.
+                </p>
+                <br />
+                <p>
+                  <strong>Prize:</strong>&nbsp;They will give $100 credit for CodeMagic to
+                  the first 20 people who win (We don't know how you win a personality
+                  quiz either. It will be interesting to find out!)
+                </p>
               </div>
               <br />
               <br />
