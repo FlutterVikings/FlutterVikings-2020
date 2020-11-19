@@ -20,9 +20,12 @@ const Communities = () => {
               <SponsorshipEmailLink title="Do you want to become part of this amazing conference?" />
 
               <br />
-
-              <h3>Check out our partner conference DartUp</h3>
               <br />
+
+              <MainTitle
+                title="Check out our partner conference DartUp"
+                titleStrokeText={'dartup'}
+              />
               <p style={{ textAlign: 'center' }}>
                 <a
                   target="_blank"
