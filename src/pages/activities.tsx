@@ -453,7 +453,7 @@ export default () => {
                   2) 4:15 - 4:30 pm CET{' '}
                 </p>
                 <p>
-                  Please submit your story{' '}
+                  Please submit your story and win a prize.{' '}
                   <a
                     target="_blank"
                     rel="noopener noreferrer nofollow"
@@ -468,14 +468,6 @@ export default () => {
                   https://www.charitywater.org/donate on behalf of the winners! You are
                   awesome, you help people have pure water! you save people's life.
                 </p>
-                <p><a
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    href="https://bit.ly/vikings-diversity"
-                  >
-                    Submit your story and win a prize.
-                  </a>{' '}</p>
-                
                 <br />
                 <br />
                 <SmallHeader>CodeMagic Quiz</SmallHeader>
