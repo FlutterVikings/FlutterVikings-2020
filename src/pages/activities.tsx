@@ -105,6 +105,22 @@ export default () => {
                     attendees! These are discount codes. So, attendees with tickets will
                     get these later in an email.
                   </p>
+                  <p>
+                    For everyone: The @ Company Gift for Virtual Community Gift Bag
+                    <br />
+                    The @ Company, creator of the Open-standard, P2P @protocol, invites
+                    you to register free and/or custom @signs at a discount for being a
+                    valued member of the Flutter Vikings Community. Depending on the level
+                    of customization, this code will secure 50% off, or up to $20 in
+                    savings on custom @signs.{' '}
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      href="https://atsign.com/flutter-vikings/gift"
+                    >
+                      https://atsign.com/flutter-vikings/gift/
+                    </a>{' '}
+                  </p>
                   <br />
                   <br />
                   <SmallHeader className="font__caesar size__h1">
@@ -129,7 +145,7 @@ export default () => {
                   <a
                     target="_blank"
                     rel="noopener noreferrer nofollow"
-                    href="https://atsign.com/flutter-vikings/"
+                    href="https://atsign.com/flutter-vikings"
                   >
                     Read more about the details here
                   </a>
