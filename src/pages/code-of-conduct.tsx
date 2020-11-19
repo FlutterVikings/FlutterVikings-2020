@@ -63,8 +63,7 @@ export default () => {
                   employment
                 </li>
                 <li>
-                  Homophobic, biphobic, transphobic, racist, or misogynist slurs or
-                  comments
+                  Homophobic, biphobic, transphobic, racist, or sexist slurs or comments
                 </li>
                 <li>Deliberate misgendering</li>
                 <li>Physical contact without consent or after a request to cease</li>
