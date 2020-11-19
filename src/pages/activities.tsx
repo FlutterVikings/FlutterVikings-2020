@@ -452,6 +452,16 @@ export default () => {
                   about diversity. This will be the second Activitiy on November 18th (Day
                   2) 4:15 - 4:30 pm CET{' '}
                 </p>
+                <p>
+                  Please submit your story{' '}
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    href="https://bit.ly/vikings-diversity"
+                  >
+                    https://bit.ly/vikings-diversity
+                  </a>{' '}
+                </p>
                 <br />
                 <p>
                   <strong>Prize:</strong> 5 x USD$20 donation to
