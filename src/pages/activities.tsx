@@ -435,7 +435,7 @@ export default () => {
                   book, will host a quiz. He made custom flutter web app just for this
                   activity! Link to it will be provided at the start of the quiz. To
                   participate, you will need to enter your ticket number. This will be the
-                  first Activitiy on November 18th (Day 2) 4:15 - 4:30 pm CET{' '}
+                  first activity on November 18th (Day 2) 4:15 - 4:30 pm CET{' '}
                 </p>
                 <br />
                 <p>
@@ -449,7 +449,7 @@ export default () => {
                 <SmallHeader>Diversity Activity</SmallHeader>
                 <p>
                   Danielle Cox, the Flutterfly, will give a talk and host an activity
-                  about diversity. This will be the second Activitiy on November 18th (Day
+                  about diversity. This will be the second activity on November 18th (Day
                   2) 4:15 - 4:30 pm CET{' '}
                 </p>
                 <p>
